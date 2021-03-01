@@ -1,0 +1,120 @@
+{
+  "name": "Carkella",
+  "date": "Project date",
+  "bg": "#12284A",
+  "url": "https://carkella.com",
+  "slug": "carkella",
+  "overview": {
+    "header": {
+      "content": "Carkella began with wallaroo 20 years ago with a mission to create great looking sun protective hats"
+    },
+    "body": {
+      "content": "Extending the company, carkella was made. The client on this project was looking for a new site design and custom theme development through the shopify ecosystem."
+    },
+    "image": {
+      "src": "/carkella/carkellahero_qohlqz.png",
+      "alt": "",
+      "width": 778,
+      "height": 564
+    }
+  },
+  "sections": [
+    {
+      "id": "process",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "2.0",
+          "title": "Process."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Powered by shopify.\nDesigned by Techyscouts."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "The client wanted a clean consistent design applied throughout the entirety of the site. This responsibility fell on Techyscouts to create a simple design for me to create as a pixel perfect Shopify theme."
+        },
+        {
+          "id": 4,
+          "type": "body",
+          "content": "Once I received the finalized design, the first stage was to break down each section, sketching and note taking, picking out repeatable components to reduce code (DRY method). The second stage was to build out the schema through Shopify, making it as easy as possible for the client to make edits."
+        }
+      ]
+    },
+    {
+      "id": "technologies",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "3.0",
+          "title": "Technologies."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Bootstrap styling.\nReact implementation.\nResponsive design."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "Because of its simple design, I had more time to focus on the code and structure of the site. By this point, I had been using Bootstrap for around 6 months and after researching some of my favorites sites, I noticed they were using Bootstrap without the ugly looking css style names. This is where I found Bootstraps utility functions, allowing me to create custom class names, making the code markup much more human readable. This is how I build my sites to this day. "
+        },
+        {
+          "id": 4,
+          "type": "body",
+          "content": "I’ve also dealt with various pre built sites that used mustachejs for their Ajax cart implementation but always found state management a much more logical solution for this element so I created a custom Ajax cart for this one with React."
+        },
+        {
+          "id": 5,
+          "type": "lgImage",
+          "widthInCols": 10,
+          "image": {
+            "src": "/carkella/carkellamockup1_ssy7je.png",
+            "alt": "",
+            "width": 2531,
+            "height": 1861
+          }
+        },
+        {
+          "id": 6,
+          "type": "imageColumns",
+          "columnCount": 3,
+          "columnGap": 1.5,
+          "content": [
+            {
+              "image": {
+                "src": "/carkella/carkellamobile1_lbigbh.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            },
+            {
+              "image": {
+                "src": "/carkella/carkellamobile2_hhnz9u.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            },
+            {
+              "image": {
+                "src": "/carkella/carkellamobile3_s41koc.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

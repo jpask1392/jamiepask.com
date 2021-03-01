@@ -1,0 +1,66 @@
+{
+  "name": "LoveLeo Rescue",
+  "date": "Project date",
+  "bg": "#1bd1d1",
+  "url": "http://loveleorescue.org",
+  "slug": "love-leo",
+  "overview": {
+    "header": {
+      "content": "Loveleo rescue are a non profit dog rehoming agency and where I rescued my dog Blue."
+    },
+    "body": {
+      "content": "After making an instagram post asking for assistance with the admin portion of their Wordpress admin, I offered some of my spare time to worked along side the founders to simplify things."
+    },
+    "image": {
+      "src": "/loveleo/loveleohero_wcooyq.png",
+      "alt": "",
+      "width": 778,
+      "height": 564
+    }
+  },
+  "sections": [
+    {
+      "id": "process",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "2.0",
+          "title": "Process."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "A good cause.\nGood housekeeping."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "Loveleo rescue have been doing the amazing work of rescuing and rehoming dogs for almost ten years. After seeing an Instagram post requesting assistance, I jumped at the chance to help updating their current out of date Wordpress site."
+        },
+        {
+          "id": 4,
+          "type": "body",
+          "content": "I installed a brand new version of Wordpress and created a new child theme where we could make edits without incorporating breaking changes. I added advanced custom fields to give them instructions on how to use each of the features implemented and helped tidy up some small UI anomalies that were bothering them."
+        },
+        {
+          "id": 5,
+          "type": "body",
+          "content": "We still have a good relation and I help out from time to time if any problems arise."
+        },
+        {
+          "id": 6,
+          "type": "lgImage",
+          "widthInCols": 10,
+          "image": {
+            "src": "/loveleo/loveleo1_sgszuj.png",
+            "alt": "",
+            "width": 1088,
+            "height": 1451
+          }
+        }
+      ]
+    }
+  ]
+}

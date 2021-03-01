@@ -1,0 +1,147 @@
+{
+  "name": "Portfolio",
+  "date": "Project date",
+  "bg": "#062979",
+  "url": "https://jamiepask.com",
+  "slug": "portfolio",
+  "overview": {
+    "header": {
+      "content": "A personal portfolio created to showcase my favorite projects and what I’ve been working on."
+    },
+    "body": {
+      "content": "This is an exploration of modern web technologies in an effort to improve my understanding of how the world of web works and how we interact with it every day."
+    },
+    "image": {
+      "src": "/portfolio/hero_jv5ln6.png",
+      "alt": "",
+      "width": 778,
+      "height": 564
+    }
+  },
+  "sections": [
+    {
+      "id": "process",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "2.0",
+          "title": "Design."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "A personal project.\nA custom design."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "My personal portfolio has gone through many iterations over the past few years,  each time taking a different approach to try and evoke a sense of my character. "
+        },
+        {
+          "id": 4,
+          "type": "body",
+          "content": "Research conduced on successful design agencies and web developer portfolios guided each design iteration. Each design was produced with Adobe XD and focused modern design and simple user experiences. Here’s a few of past design iterations."
+        },
+        {
+          "id": 5,
+          "type": "lgImage",
+          "widthInCols": 10,
+          "image": {
+            "src": "/portfolio/iterations_uwkgne.png",
+            "alt": "",
+            "width": 2452,
+            "height": 1374
+          }
+        },
+        {
+          "id": 6,
+          "type": "body",
+          "content": "After further research of successful sites, I decided to take a step back and strip back the design to have only the essentials."
+        },
+        {
+          "id": 7,
+          "type": "body",
+          "content": "I understood the purpose of the site is to display case studies so these were placed so that they are the first thing the user experiences. I removed any non needed pages like dedicated contact and home pages and focused more on subtle animations and simplicity."
+        },
+        {
+          "id": 9,
+          "type": "lgImage",
+          "widthInCols": 8,
+          "image": {
+            "src": "/portfolio/mockup2_yew1qz.png",
+            "alt": "",
+            "width": 778,
+            "height": 564
+          }
+        },
+        {
+          "id": 8,
+          "type": "lgImage",
+          "widthInCols": 8,
+          "image": {
+            "src": "/portfolio/mockup1_m7yek8.png",
+            "alt": "",
+            "width": 778,
+            "height": 564
+          }
+        },
+        {
+          "id": 10,
+          "type": "imageColumns",
+          "columnCount": 3,
+          "columnGap": 1.5,
+          "content": [
+            {
+              "image": {
+                "src": "/portfolio/phone3_iirodn.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            },
+            {
+              "image": {
+                "src": "/portfolio/phone1_usxyo6.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            },
+            {
+              "image": {
+                "src": "/portfolio/phone2_it6wfa.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "3.0",
+          "title": "Frontend development."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "NextJS.\nFramer Motion."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "Looking at modern frameworks implementing React, Next.js was a clear winner because of its crazy efficient pre rendering tech, simple page routing and fast set up time."
+        }
+      ]
+    }
+  ]
+}

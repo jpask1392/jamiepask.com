@@ -1,0 +1,88 @@
+{
+  "name": "Project Name",
+  "date": "Project date",
+  "bg": "#0B1334",
+  "url": "https://example.com",
+  "slug": "slug",
+  "overview": {
+    "header": {
+      "content": ""
+    },
+    "body": {
+      "content": ""
+    },
+    "image": {
+      "src": "/techtonic/hero@2x.png",
+      "alt": "",
+      "width": 778,
+      "height": 564
+    }
+  },
+  "sections": [
+    {
+      "id": "process",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "1.0",
+          "title": "title"
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Large Header"
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "Body"
+        },
+        {
+          "id": 4,
+          "type": "lgImage",
+          "widthInCols": 10,
+          "image": {
+            "src": "/techtonic/placeholder@2x.jpg",
+            "alt": "",
+            "width": 2452,
+            "height": 1472
+          }
+        },
+        {
+          "id": 6,
+          "type": "imageColumns",
+          "columnCount": 3,
+          "columnGap": 1.5,
+          "content": [
+            {
+              "image": {
+                "src": "/ilola/mobile1.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            },
+            {
+              "image": {
+                "src": "/ilola/mobile2.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            },
+            {
+              "image": {
+                "src": "/ilola/mobile3.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

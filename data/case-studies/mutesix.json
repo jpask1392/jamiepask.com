@@ -1,0 +1,110 @@
+{
+  "name": "Mutesix",
+  "date": "2020",
+  "bg": "#0B1334",
+  "url": "https://mutesix.com/",
+  "slug": "mutesix",
+  "overview": {
+    "header": {
+      "content": "Mutesix is an ad agency whose worked with top clients like Adidas and the La times."
+    },
+    "body": {
+      "content": "After their internal team created a complete redesign of their current site, the team at techyscouts were brought in to bring the design to life via a custom wordpress theme."
+    },
+    "image": {
+      "src": "/mutesix/hero_x8vnww.png",
+      "alt": "",
+      "width": 778,
+      "height": 564
+    }
+  },
+  "sections": [
+    {
+      "id": "process",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "2.0",
+          "title": "Process."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Built on Wordpress.\nDesigned By Mutesix."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "The client came from using an obscure CMS system on their current website which led to many headaches. I was hired to build a robust backend system, that would be easily editable using the Wordpress ecosystem."
+        },
+        {
+          "id": 4,
+          "type": "body",
+          "content": "Once the new design was completed by the internal Mutesix team, the first stage was to break down each section, sketching and note taking, picking out repeatable components to reduce code (DRY method). The second stage was to build out the schema with ACF, making it as easy as possible for the client to make edits."
+        }
+      ]
+    },
+    {
+      "id": "animations",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "2.0",
+          "title": "Process."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Animation library research.\nCustom Ajax functions.\nWistia api."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "The wanted to incorporate animations wherever possible so I was given free reign with little guidance. I researched multiple animation libraries like anime.js and scrollreveal.js but ultimately decided to go with the highly customizable and powerful GSAP."
+        },
+        {
+          "id": 4,
+          "type": "body",
+          "content": "Once the libraries were chosen, I turned my attention to creating smooth filter and search filters using Wordpress’s query functions. Custom filter and search functions were built into the site’s case study, blog and partners pages. "
+        },
+        {
+          "id": 5,
+          "type": "lgImage",
+          "widthInCols": 8,
+          "image": {
+            "src": "/mutesix/mockup3_onysjm.png",
+            "alt": "",
+            "width": 2531,
+            "height": 1861
+          }
+        },
+        {
+          "id": 6,
+          "type": "lgImage",
+          "widthInCols": 8,
+          "image": {
+            "src": "/mutesix/mockup2_zjtcbu.png",
+            "alt": "",
+            "width": 2531,
+            "height": 1861
+          }
+        },
+        {
+          "id": 7,
+          "type": "lgImage",
+          "widthInCols": 8,
+          "image": {
+            "src": "/mutesix/mockup1_kyygi1.png",
+            "alt": "",
+            "width": 2531,
+            "height": 1861
+          }
+        }
+      ]
+    }
+  ]
+}

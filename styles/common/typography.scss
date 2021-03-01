@@ -1,0 +1,75 @@
+// breakpoints
+$sm: '425px';
+$md: '768px';
+$lg: '1024px';
+$xl: '2560px';
+
+@mixin breakpoint($size) {
+  @media (min-width: $size) { @content; }
+}
+
+html {
+  font-smooth: antialiased;
+}
+
+body {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+
+  @include breakpoint($md) {
+    font-size: 20px;
+  }
+
+  @include breakpoint($lg) {
+    font-size: 25px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'synthese';
+  font-weight: 900;
+  // text-transform: lowercase;
+}
+
+h2 {
+  font-family: aktiv-grotesk, sans-serif;
+  line-height: 1.4;
+  font-weight: 300;
+  font-size: 28px;
+
+  @include breakpoint($md) {
+    font-size: 35px;
+  }
+
+  @include breakpoint($lg) {
+    font-size: 50px;
+  }
+}
+
+h3 {
+  font-family: aktiv-grotesk, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+
+  @include breakpoint($lg) {
+    font-size: 15px;
+  }
+}
+
+p {
+  line-height: 2;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

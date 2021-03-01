@@ -1,0 +1,77 @@
+{
+  "name": "House Concepts",
+  "date": "Project date",
+  "bg": "#F1F1F1",
+  "url": "https://houseconcepts.com/",
+  "slug": "house-concepts",
+  "overview": {
+    "header": {
+      "content": "Houseconcepts is a sweat and social movement. A unique collective concept of four studios under one roof."
+    },
+    "body": {
+      "content": "Shortly after being introduced to the dev team on the project, I was tasked with building out a new store using Shopify to store product data and present the data via the storefront API through a nextJS app."
+    },
+    "image": {
+      "src": "/houseconcepts/hero_b14wld.png",
+      "alt": "",
+      "width": 778,
+      "height": 564
+    }
+  },
+  "sections": [
+    {
+      "id": "responsibilities",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "2.0",
+          "title": "Responsibilities."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Backend, Shopify.\nFrontend, NextJS."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "The majority of the site had already been built out before I joined the team, using a Nextjs set up. The client was looking to add a new section of the site to house a product store. They wanted to manage this data themselves so to avoid a large overhead of CMS creation, we opted to go with a Shopify backend."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "To create a connection between the two systems and use Shopify as a headless CMS, I implemented the storefront api with GraphQL for efficiency. "
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "3.0",
+          "title": "Process."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Shopify. React. Redux."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "After setting up a simple shopify store, the client began adding products for me to test. I collected the data via Shopify’s storefront api and stored state of the app with Redux to enable global features without creating a mess of the components with props eg the Ajax cart."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "I was then able to generate a checkout link and take advantage of Shopify’s already built out checkout system to handle client payments."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Portfolio",
+    "category": "React",
+    "color": "#062979",
+    "date": "2020",
+    "slug": "portfolio",
+    "hero": {
+      "width": 778,
+      "height": 564,
+      "src": "portfolio/mockup2_yew1qz.png"
+    }
+  },
+  {
+    "name": "Techtonic",
+    "category": "Wordpress",
+    "color": "#002476",
+    "date": "2021",
+    "slug": "techtonic",
+    "hero": {
+      "width": 778,
+      "height": 564,
+      "src": "techtonic/hero_2x_ugy88a.png"
+    }
+  },
+  {
+    "name": "Mutesix",
+    "category": "Wordpress",
+    "color": "#0B1334",
+    "date": "2021",
+    "slug": "mutesix",
+    "hero": {
+      "width": 778,
+      "height": 564,
+      "src": "mutesix/hero_x8vnww.png"
+    }
+  },
+  {
+    "name": "House Concepts",
+    "category": "React",
+    "color": "#F1F1F1",
+    "date": "2021",
+    "slug": "house-concepts",
+    "hero": {
+      "width": 778,
+      "height": 564,
+      "src": "houseconcepts/hero_b14wld.png"
+    }
+  },
+  {
+    "name": "Ilola",
+    "category": "Shopify",
+    "color": "#10100F",
+    "date": "2020",
+    "slug": "ilola",
+    "hero": {
+      "width": 778,
+      "height": 564,
+      "src": "ilola/hero_qip8g3.png"
+    }
+  },
+  {
+    "name": "Carkella",
+    "category": "Shopify",
+    "color": "#12284A",
+    "date": "2020",
+    "slug": "carkella",
+    "hero": {
+      "width": 778,
+      "height": 564,
+      "src": "/carkella/carkellahero_qohlqz.png"
+    }
+  },
+  {
+    "name": "Loveleo Rescue",
+    "category": "Wordpress",
+    "color": "#1bd1d1",
+    "date": "2019",
+    "slug": "love-leo",
+    "hero": {
+      "width": 778,
+      "height": 564,
+      "src": "/loveleo/loveleohero_wcooyq.png"
+    }
+  }
+]

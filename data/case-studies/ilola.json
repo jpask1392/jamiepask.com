@@ -1,0 +1,120 @@
+{
+  "name": "Ilola",
+  "date": "Project date",
+  "bg": "#10100F",
+  "url": "https://ilola.ca",
+  "slug": "ilola",
+  "overview": {
+    "header": {
+      "content": "Ilola is a luxury wellness brand specializing in teas and scents."
+    },
+    "body": {
+      "content": "The project was designed to be built in phases - phase one was completed to host a single product, account pages, blog posts and legal pages, among other simple pages."
+    },
+    "image": {
+      "src": "/ilola/hero_qip8g3.png",
+      "alt": "",
+      "width": 778,
+      "height": 564
+    }
+  },
+  "sections": [
+    {
+      "id": "process",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "2.0",
+          "title": "Process."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "A new brand.\nA new site.\nPowered by Shopify."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "Colony Digital worked closely with the client to design a beautiful, luxury website, focusing heavily on professional imagery and a minimal color palette. I was responsible for working alongside Colony to develop a new custom theme built with Shopify and Slate."
+        },
+        {
+          "id": 4,
+          "type": "body",
+          "content": "Working with Shopify’s slate framework led to a much more performant client side site. With Webpack’s module/assets bundling features and NPM, source code files are more maintainable and easily configurable than relying solely on Shopify’s ecosystem alone. Storing these source files through a GitHub repo, the end of project handover was easily implemented with minimal difficulties."
+        },
+        {
+          "id": 5,
+          "type": "lgImage",
+          "widthInCols": 8,
+          "image": {
+            "src": "/ilola/mockup1_dfqpga.png",
+            "alt": "",
+            "width": 778,
+            "height": 564
+          }
+        },
+        {
+          "id": 6,
+          "type": "imageColumns",
+          "columnCount": 3,
+          "columnGap": 1.5,
+          "content": [
+            {
+              "image": {
+                "src": "/ilola/mobile3_ewni4n.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            },
+            {
+              "image": {
+                "src": "/ilola/mobile1_gtrdfe.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            },
+            {
+              "image": {
+                "src": "/ilola/mobile2_eqxje1.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "3.0",
+          "title": "Development."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Phased deployment.\nParallax effects."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "A requirement for launch before the new year led to a phased deployment strategy. The first phase was to set up all critical pages to allow the purchase of a single high end product. These pages included the homepage, cart, account, checkout and legal pages. Once set up, theme files were added to create cohesive styling across the entire site along with a fully responsive set up to allow users to view on mobile, tablet and desktop."
+        },
+        {
+          "id": 4,
+          "type": "body",
+          "content": "The final step of this phase was to add beautiful photography and create subtle animations to elevate the product to the next level. Scrolling animations were included to create parallax effects using the popular GSAP library alongside the ScrollMagic plugin."
+        }
+      ]
+    }
+  ]
+}

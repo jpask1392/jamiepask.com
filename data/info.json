@@ -1,0 +1,168 @@
+[
+  {
+    "id": "intro",
+    "background": false,
+    "blocks": [
+      {
+        "id": 1,
+        "type": "lgHeader",
+        "content": "Born and raised in the United Kingdom, moved to the United States in 2019."
+      },
+      {
+        "id": 2,
+        "type": "body",
+        "content": "During a short career as an Architectural Technologist, a need for automating repetitive software tasks created my fascination with programatic development which led to a career as a web developer."
+      },
+      {
+        "id": 3,
+        "type": "lgImage",
+        "widthInCols": 12,
+        "image": {
+          "src": "info/me_ch44xv.jpg",
+          "alt": "",
+          "width": 1221,
+          "height": 657
+        }
+      }
+    ]
+  },
+  {
+    "id": "how-i-got-here",
+    "background": "#062979",
+    "blocks": [
+      {
+        "id": 1,
+        "type": "smHeader",
+        "content": "How I got here"
+      },
+      {
+        "id": 2,
+        "type": "lgHeader",
+        "content": "Suffering with the travel bug, 2014 hit and I, with few friends set off to the East coast of America."
+      },
+      {
+        "id": 3,
+        "type": "body",
+        "content": "We travelled from New York to Miami on a short 2 week trip, sealing my fascination with the states. Shortly after returning home, I met a girl in a bar that happened to be from California. \n She was completing part of her university degree in Cardiff University and we hit it off instantly. We spent her entire time in Cardiff together before she eventually went back to LA at the end of 2015. We continued the long distance relationship for over 4 years, where we would travel back and forth often to be with each other until at the beginning of 2019 we tied the knot and I made the move out to Los Angeles."
+      }
+    ]
+  },
+  {
+    "id": "experience",
+    "background": false,
+    "blocks": [
+      {
+        "id": 1,
+        "type": "smHeader",
+        "content": "Experience"
+      },
+      {
+        "id": 2,
+        "type": "lgHeader",
+        "content": "Here's some of the awesome brands I've been lucky enough to work with."
+      },
+      {
+        "id": 3,
+        "type": "brands",
+        "brands": [
+          {
+            "image": {
+              "src": "/info/moonjuice.png",
+              "alt": "",
+              "width": 100,
+              "height": 100
+            }
+          },
+          {
+            "image": {
+              "src": "/info/carkella.png",
+              "alt": "",
+              "width": 100,
+              "height": 100
+            }
+          },
+          {
+            "image": {
+              "src": "/info/mutesix.png",
+              "alt": "",
+              "width": 100,
+              "height": 100
+            }
+          },
+          {
+            "image": {
+              "src": "/info/ilola.png",
+              "alt": "",
+              "width": 100,
+              "height": 100
+            }
+          },
+          {
+            "image": {
+              "src": "/info/littlebridges.png",
+              "alt": "",
+              "width": 100,
+              "height": 100
+            }
+          },
+          {
+            "image": {
+              "src": "/info/nexwear.png",
+              "alt": "",
+              "width": 100,
+              "height": 100
+            }
+          },
+          {
+            "image": {
+              "src": "/info/isw.png",
+              "alt": "",
+              "width": 100,
+              "height": 100
+            }
+          },
+          {
+            "image": {
+              "src": "/info/salute.png",
+              "alt": "",
+              "width": 100,
+              "height": 100
+            }
+          },
+          {
+            "image": {
+              "src": "/info/loveLeo.png",
+              "alt": "",
+              "width": 100,
+              "height": 100
+            }
+          },
+          {
+            "image": {
+              "src": "/info/techtonic.png",
+              "alt": "",
+              "width": 100,
+              "height": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "type": "timeline",
+        "dateStart": "Dec 2019",
+        "dateEnd": "Present",
+        "company": "Techyscouts, Los Angeles, ca",
+        "content": "I began working with Techyscouts at the end of 2019 as a contractor,  building out various themes with Wordpress and then eventually, Shopify.\n\nDuring my time with them, I have personally developed techniques for quality control, implemented CI/CD techniques and consistently improved my understanding of web technologies."
+      },
+      {
+        "id": 5,
+        "type": "timeline",
+        "dateStart": "Nov 2020",
+        "dateEnd": "Present",
+        "company": "Various,  Vancouver, bc",
+        "content": "I have also been fortunate enough to be in contact with a few companies in Vancouver and contracted work for them including Nextjs and Shopify builds."
+      }
+    ]
+  }
+]

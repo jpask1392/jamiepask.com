@@ -1,0 +1,148 @@
+{
+  "name": "techtonic",
+  "date": "2020",
+  "bg": "#002476",
+  "url": "https://techtonic.com/",
+  "slug": "techtonic",
+  "overview": {
+    "header": {
+      "content": "Techtonic is a women-led, certified B corporation, tech talent training program."
+    },
+    "body": {
+      "content": "After an internal re-design of the current outdated website, I was responsible for converting the Adobe XD mockup to a pixel perfect Wordpress custom theme within a strict deadline."
+    },
+    "image": {
+      "src": "/techtonic/hero_2x_ugy88a.png",
+      "alt": "",
+      "width": 778,
+      "height": 564
+    }
+  },
+  "sections": [
+    {
+      "id": "process",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "2.0",
+          "title": "Process."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Plan. Research. Build."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "The planning phase of the project involved making sketches of the different layouts to see if which components we could reuse to prevent a repetitive code base. This stage is also used to think about how I would like to structure and layout DOM elements to produce the cleanest, semantic HTML possible."
+        },
+        {
+          "id": 4,
+          "type": "lgImage",
+          "widthInCols": 10,
+          "image": {
+            "src": "/techtonic/plan_2x_idddsf.jpg",
+            "alt": "",
+            "width": 2030,
+            "height": 1522
+          }
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "3.0",
+          "title": "Development."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Wordpress.\nLocomotive Scroll.\nAnimeJS."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "Our CMS of choice was Wordpress with a custom theme built with a starter kit from roots.io. With a default Webpack set up, blade templating language and bootstrap out of the box, the starter kit is a great start to produce high performing themes."
+        },
+        {
+          "id": 4,
+          "type": "body",
+          "content": "I wanted to provide a recognizable user experience and did a lot of research on different animation libraries which would be suitable for the project. I came across Locomotive and was impressed with the subtle smooth animation effects. This tool is able to track element locations on screen and allowed the activation of another animation library, AnimeJS, once elements hit the viewport."
+        }
+      ]
+    },
+    {
+      "id": "responsive",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "4.0",
+          "title": "Responsive design."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Desktop. Tablet. Mobile."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "During development, DOM elements were set up to easily transition to mobile and tablet layouts with bootstrap’s SASS functions. I use these functions as opposed to Bootstrap’s default style names to make the code more easily human readable."
+        },
+        {
+          "id": 4,
+          "type": "lgImage",
+          "widthInCols": 8,
+          "image": {
+            "src": "/techtonic/hero_2x_ugy88a.png",
+            "alt": "",
+            "width": 2531,
+            "height": 1861
+          }
+        },
+        {
+          "id": 5,
+          "type": "imageColumns",
+          "columnCount": 3,
+          "columnGap": 1.5,
+          "content": [
+            {
+              "image": {
+                "src": "techtonic/mobile1_mzju8k.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            },
+            {
+              "image": {
+                "src": "techtonic/mobile3_w2dk0k.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            },
+            {
+              "image": {
+                "src": "techtonic/mobile2_l9rqn7.png",
+                "alt": "",
+                "width": 472,
+                "height": 958
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
