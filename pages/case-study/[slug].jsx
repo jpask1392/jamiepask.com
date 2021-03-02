@@ -6,11 +6,13 @@ import dataset from 'data/case-studies'
 
 // dependencies
 import { Nav, Hero, Footer } from 'components/case-study'
+import { Seo } from 'components/common'
 import Section from 'components/common/section'
 
 // this is a react component definition
 const Project = ({project, nextProject}) => (
   <>
+    <Seo title={project.name} />
     <Nav data={project} />
     <main className="case-study bg-white">
       <Hero data={project} />
