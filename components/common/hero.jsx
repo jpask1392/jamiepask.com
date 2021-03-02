@@ -6,7 +6,7 @@ import { container, breakpoint, columnWidth } from 'styles/sc-mixins'
 const Hero = ({className, header, subheader}) => (
   <header className={className}>
     <h1>{header}</h1>
-    {/* <h3 className="subtext">{subheader}</h3> */}
+    <h3 className="subtext">{subheader}</h3>
   </header>
 )
 
