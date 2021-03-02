@@ -36,6 +36,7 @@ const Cimage = ({width, height, src, className}) => {
         loader={myLoader}
         width={width}
         height={height}
+        responsive={true}
         // sizes="(min-width: 1000px) 400px"
         onLoad={handleLoad}
       />
