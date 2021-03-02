@@ -22,7 +22,11 @@ const variants = {
   hidden: {
     opacity: 0,
     skewY: 5,
-    y: "6rem"
+    y: "6rem",
+    transition: {
+      duration: 0.6,
+      ease: "easeOut"
+    }
   },
 }
 

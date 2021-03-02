@@ -22,7 +22,7 @@ const Section = ({className, data}) => {
   }
 
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: 0.1,
     triggerOnce	: true,
   });
 
