@@ -31,9 +31,10 @@ const Filter = ({className, updateResults, projects}) => {
           className={active ? 'active' : ''} 
           onClick={() => handleClick(name)}
           key={name}>
-            {name} <span className="count">
+            {name} 
+            <sup className="count">
               {projects.filter(project => project.category === name).length}
-            </span>
+            </sup>
         </li>  
       ))}
     </ul>
@@ -57,6 +58,7 @@ export default styled(Filter)`
     font-size: 15px;
     cursor: pointer;
     margin-bottom: 0.5rem;
+    transition: opacity 0.3s;
 
     @media ${breakpoint.md} {
       font-size: 20px;
@@ -79,26 +81,15 @@ export default styled(Filter)`
 
   .count {
     font-size: 11px;
-    border: 1px solid black;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    text-align: center;
-    line-height: 1.7;
+    font-weight: 500;
+    margin-left: 2px;
 
     @media ${breakpoint.md} {
-      font-size: 22px;
-      width: 35px;
-      height: 35px;
-      line-height: 1.5;
+      font-size: 14px;
     }
 
     @media ${breakpoint.lg} {
-      font-size: 20px;
-      width: 30px;
-      height: 30px;
-      line-height: 1.5;
+      font-size: 14px;
     }
   }
 `
