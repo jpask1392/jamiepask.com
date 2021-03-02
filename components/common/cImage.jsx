@@ -36,7 +36,7 @@ const Cimage = ({width, height, src, className}) => {
         loader={myLoader}
         width={width}
         height={height}
-        sizes="(min-width: 1000px) 400px"
+        // sizes="(min-width: 1000px) 400px"
         onLoad={handleLoad}
       />
     </div>
