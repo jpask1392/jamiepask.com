@@ -17,7 +17,19 @@ const HeadComponent = ({ title = '' }) => {
 
       <link rel="preload" href="https://use.typekit.net/uuv2xsf.css" as="style" />
       <link rel="stylesheet" href="https://use.typekit.net/uuv2xsf.css" />
-      {/* <link rel="shortcut icon" href="/img/favicon-96x96.png" /> */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106964088-2"></script>
+
+      <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-106964088-2');
+              `,
+          }}
+        />
+      
     </Head>
 )}
 
