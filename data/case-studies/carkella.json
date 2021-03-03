@@ -12,7 +12,7 @@
       "content": "Extending the company, carkella was made. The client on this project was looking for a new site design and custom theme development through the shopify ecosystem."
     },
     "image": {
-      "src": "/carkella/carkellahero_qohlqz.png",
+      "src": "/carkella/carkellahero_qohlqz.webp",
       "alt": "",
       "width": 778,
       "height": 564
@@ -76,7 +76,7 @@
           "type": "lgImage",
           "widthInCols": 10,
           "image": {
-            "src": "/carkella/carkellamockup1_ssy7je.png",
+            "src": "/carkella/carkellamockup1_ssy7je.webp",
             "alt": "",
             "width": 2531,
             "height": 1861
@@ -90,7 +90,7 @@
           "content": [
             {
               "image": {
-                "src": "/carkella/carkellamobile1_lbigbh.png",
+                "src": "/carkella/carkellamobile1_lbigbh.webp",
                 "alt": "",
                 "width": 472,
                 "height": 958
@@ -98,7 +98,7 @@
             },
             {
               "image": {
-                "src": "/carkella/carkellamobile2_hhnz9u.png",
+                "src": "/carkella/carkellamobile2_hhnz9u.webp",
                 "alt": "",
                 "width": 472,
                 "height": 958
@@ -106,7 +106,7 @@
             },
             {
               "image": {
-                "src": "/carkella/carkellamobile3_s41koc.png",
+                "src": "/carkella/carkellamobile3_s41koc.webp",
                 "alt": "",
                 "width": 472,
                 "height": 958

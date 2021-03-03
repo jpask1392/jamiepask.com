@@ -12,7 +12,7 @@
       "content": ""
     },
     "image": {
-      "src": "/techtonic/hero@2x.png",
+      "src": "/techtonic/hero@2x.webp",
       "alt": "",
       "width": 778,
       "height": 564
@@ -58,7 +58,7 @@
           "content": [
             {
               "image": {
-                "src": "/ilola/mobile1.png",
+                "src": "/ilola/mobile1.webp",
                 "alt": "",
                 "width": 472,
                 "height": 958
@@ -66,7 +66,7 @@
             },
             {
               "image": {
-                "src": "/ilola/mobile2.png",
+                "src": "/ilola/mobile2.webp",
                 "alt": "",
                 "width": 472,
                 "height": 958
@@ -74,7 +74,7 @@
             },
             {
               "image": {
-                "src": "/ilola/mobile3.png",
+                "src": "/ilola/mobile3.webp",
                 "alt": "",
                 "width": 472,
                 "height": 958

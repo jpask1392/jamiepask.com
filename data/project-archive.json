@@ -8,7 +8,7 @@
     "hero": {
       "width": 778,
       "height": 564,
-      "src": "portfolio/mockup2_yew1qz.png"
+      "src": "portfolio/mockup2_yew1qz.webp"
     }
   },
   {
@@ -20,7 +20,7 @@
     "hero": {
       "width": 778,
       "height": 564,
-      "src": "techtonic/hero_2x_ugy88a.png"
+      "src": "techtonic/hero_2x_ugy88a.webp"
     }
   },
   {
@@ -32,7 +32,7 @@
     "hero": {
       "width": 778,
       "height": 564,
-      "src": "mutesix/hero_x8vnww.png"
+      "src": "mutesix/hero_x8vnww.webp"
     }
   },
   {
@@ -44,7 +44,7 @@
     "hero": {
       "width": 778,
       "height": 564,
-      "src": "houseconcepts/hero_b14wld.png"
+      "src": "houseconcepts/hero_b14wld.webp"
     }
   },
   {
@@ -56,7 +56,7 @@
     "hero": {
       "width": 778,
       "height": 564,
-      "src": "ilola/hero_qip8g3.png"
+      "src": "ilola/hero_qip8g3.webp"
     }
   },
   {
@@ -68,7 +68,7 @@
     "hero": {
       "width": 778,
       "height": 564,
-      "src": "/carkella/carkellahero_qohlqz.png"
+      "src": "/carkella/carkellahero_qohlqz.webp"
     }
   },
   {
@@ -80,7 +80,7 @@
     "hero": {
       "width": 778,
       "height": 564,
-      "src": "/loveleo/loveleohero_wcooyq.png"
+      "src": "/loveleo/loveleohero_wcooyq.webp"
     }
   }
 ]
