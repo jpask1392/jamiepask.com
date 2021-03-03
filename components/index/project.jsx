@@ -67,7 +67,7 @@ const Project = ({className, data, updateIndex, index, indexInView}) => {
               width={data.hero.width}
               height={data.hero.height}
               sizes="
-                (max-width: 767px) 160px,
+                (max-width: 767px) 100px,
                 (min-width: 768px) and (max-width: 999px) 300px, 
                 (min-width: 1000px) and (max-width: 1999px) 400px, 
                 (min-width: 2000px) and (max-width: 2500px) 500px,
