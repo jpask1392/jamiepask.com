@@ -14,7 +14,13 @@ const myLoaderBlur = ({ src, width }) => {
   return `https://res.cloudinary.com/djetpo84s/image/upload/e_blur:200,w_100/v1614310082/jamiepask.com/${src}`
 }
 
-const Cimage = ({width, height, src, className}) => {
+const Cimage = ({
+  width,
+  height,
+  src,
+  className,
+  sizes = "(min-width: 1000px) and (max-width: 1999px) 800px, (min-width: 2000px) 1500px, 100vw"
+}) => {
   // const cloundinary_id = "djetpo84s"
   const [ loading, setLoading ] = useState(true)
 
@@ -42,7 +48,7 @@ const Cimage = ({width, height, src, className}) => {
         loader={myLoader}
         width={width}
         height={height}
-        sizes="(min-width: 1000px) and (max-width: 1999px) 800px, (min-width: 2000px) 1500px, 100vw"
+        sizes={sizes}
         onLoad={handleLoad}
       />
     </div>

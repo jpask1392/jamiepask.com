@@ -66,6 +66,10 @@ const Project = ({className, data, updateIndex, index, indexInView}) => {
               alt="Picture of the author"
               width={data.hero.width}
               height={data.hero.height}
+              sizes="
+                (min-width: 1000px) and (max-width: 1999px) 400px, 
+                (min-width: 2000px) and (max-width: 2500px) 500px,
+                100vw"
             />
           </div>
           <motion.h4 variants={variants} className="title">{data.name}</motion.h4>
