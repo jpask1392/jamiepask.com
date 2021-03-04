@@ -13,7 +13,7 @@ const Nav = ({className, data}) => {
         <a className="arrow back-arrow"><SVG src="/svg/arrow.svg" /></a>
       </Link>
 
-      <a className="arrow launch-arrow" href={data.url} target="_blank">
+      <a className="arrow launch-arrow" href={data.url} target="_blank" rel="noreferrer">
         <SVG src="/svg/arrow.svg" />
       </a>
     </nav>
@@ -24,7 +24,7 @@ const Nav = ({className, data}) => {
         <a className="arrow back-arrow"><SVG src="/svg/arrow.svg" /></a>
       </Link>
 
-      <a className="arrow launch-arrow" href={data.url} target="_blank">
+      <a className="arrow launch-arrow" href={data.url} target="_blank" rel="noreferrer">
         <SVG src="/svg/arrow.svg" />
       </a>
     </nav>
