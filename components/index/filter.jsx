@@ -54,7 +54,7 @@ export default styled(Filter)`
 
   li {
     margin-right: 15px;
-    opacity: 0.35;
+    opacity: 0.45;
     font-size: 15px;
     cursor: pointer;
     margin-bottom: 0.5rem;

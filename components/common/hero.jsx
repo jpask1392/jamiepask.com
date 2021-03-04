@@ -6,7 +6,7 @@ import { container, breakpoint, columnWidth } from 'styles/sc-mixins'
 const Hero = ({className, header, subheader}) => (
   <header className={className}>
     <h1>{header}</h1>
-    <h3 className="subtext">{subheader}</h3>
+    <h2 className="subtext">{subheader}</h2>
   </header>
 )
 
@@ -50,5 +50,14 @@ export default styled(Hero)`
     height: 1px;
     background: rgba(0, 0, 0, 0.1);
     margin-top: 1.5rem;
+  }
+
+  .subtext {
+    font-size: 12px;
+    font-weight: 700;
+
+    @media ${breakpoint.md} {
+      font-size: 15px;
+    }
   }
 `

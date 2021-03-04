@@ -74,7 +74,7 @@ const Project = ({className, data, updateIndex, index, indexInView}) => {
                 100vw"
             />
           </div>
-          <motion.h4 variants={variants} className="title">{data.name}</motion.h4>
+          <motion.h3 variants={variants} className="title">{data.name}</motion.h3>
           <motion.span variants={variants} className="arrow"><SVG src="/svg/arrow.svg" /></motion.span>
           <motion.span variants={variants} className="category">{data.category}</motion.span>
           <motion.time variants={variants} dateTime={data.date}>{data.date}</motion.time>
@@ -162,6 +162,7 @@ export default styled(Project)`
     top: 30px;
     left: 30px;
     font-size: 14px;
+    text-transform: capitalize;
 
     @media ${breakpoint.lg} {
       top: ${columnWidth(0.5)};

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 // Component
 const Hamburger = ({className, setOpen, open}) => (
-  <button className={className} onClick={() => setOpen(!open)}>
+  <button className={className} onClick={() => setOpen(!open)} aria-label="Navigation Toggle">
     <motion.div 
       className="hamburger"
       animate={open ? "open" : "closed"}
