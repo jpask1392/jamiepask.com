@@ -8,7 +8,7 @@ export default function Seo ({ title = '' }) {
 
   return (
     <Head>
-      <title>{ title }</title>
+      <title>{ `Jamie Pask | ${title}` }</title>
       <meta property="og:title" content={ title } />
       <meta name="twitter:title" content={ title } />
     </Head>

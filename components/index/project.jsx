@@ -36,7 +36,7 @@ const variants = {
 const Project = ({className, data, updateIndex, index, indexInView}) => {
   const [isHover, setIsHover] = useState(false)
   const { ref, inView } = useInView({
-    threshold: 1
+    rootMargin: `-${(window.innerHeight / 2) - 1}px 0px -${window.innerHeight / 2}px 0px`
   });
 
 
