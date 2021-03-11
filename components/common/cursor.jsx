@@ -63,6 +63,11 @@ const Cursor = ({className}) => {
           el.addEventListener("mouseover", () => setLinkHovered(true));
           el.addEventListener("mouseout", () => setLinkHovered(false));
       });
+
+      document.querySelectorAll("button").forEach((el) => {
+        el.addEventListener("mouseover", () => setLinkHovered(true));
+        el.addEventListener("mouseout", () => setLinkHovered(false));
+    });
     };
 
     const cursorClasses = classNames("cursor", {
@@ -121,12 +126,12 @@ export default styled(Cursor)`
   }
 
   &.cursor--link-hovered {
-    transform: translate(-50%, -50%) scale(1.25);
+    transform: translate(-50%, -50%) scale(1.35);
     // background-color: white;
     // opacity: 0.7;
   }
 
   &.cursor--hidden {
-    // opacity: 0;
+    opacity: 0;
   }
 `

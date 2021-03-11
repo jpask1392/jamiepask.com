@@ -31,10 +31,11 @@ const Filter = ({className, updateResults, projects}) => {
           className={active ? 'active' : ''} 
           onClick={() => handleClick(name)}
           key={name}>
-            {name} 
+            <a>{name} 
             <sup className="count">
               {projects.filter(project => project.category === name).length}
             </sup>
+            </a>
         </li>  
       ))}
     </ul>
