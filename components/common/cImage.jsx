@@ -7,7 +7,7 @@ import styled from 'styled-components'
  * Functional component to use nextjs Image with cloudinary
  */
 const myLoader = ({ src, width }) => {
-  return `https://res.cloudinary.com/djetpo84s/image/upload/w_${width}/v1614310082/jamiepask.com/${src}`
+  return `https://res.cloudinary.com/djetpo84s/image/upload/w_${width},f_auto/v1614310082/jamiepask.com/${src}`
 }
 
 const myLoaderBlur = ({ src, width }) => {
@@ -42,6 +42,7 @@ const Cimage = ({
           />
         </div> 
     }
+
     <Image
         src={src}
         alt="Picture of the author"

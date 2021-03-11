@@ -12,7 +12,7 @@
       "content": "After an internal re-design of the current outdated website, I was responsible for converting the Adobe XD mockup to a pixel perfect Wordpress custom theme within a strict deadline."
     },
     "image": {
-      "src": "/techtonic/hero_2x_ugy88a.webp",
+      "src": "/techtonic/hero_2x_ugy88a.jpg",
       "alt": "",
       "width": 778,
       "height": 564
@@ -104,7 +104,7 @@
           "type": "lgImage",
           "widthInCols": 8,
           "image": {
-            "src": "/techtonic/hero_2x_ugy88a.webp",
+            "src": "/techtonic/hero_2x_ugy88a.jpg",
             "alt": "",
             "width": 2531,
             "height": 1861
@@ -118,7 +118,7 @@
           "content": [
             {
               "image": {
-                "src": "techtonic/mobile1_mzju8k.webp",
+                "src": "techtonic/mobile1_mzju8k.jpg",
                 "alt": "",
                 "width": 472,
                 "height": 958
@@ -126,7 +126,7 @@
             },
             {
               "image": {
-                "src": "techtonic/mobile3_w2dk0k.webp",
+                "src": "techtonic/mobile3_w2dk0k.jpg",
                 "alt": "",
                 "width": 472,
                 "height": 958
@@ -134,7 +134,7 @@
             },
             {
               "image": {
-                "src": "techtonic/mobile2_l9rqn7.webp",
+                "src": "techtonic/mobile2_l9rqn7.jpg",
                 "alt": "",
                 "width": 472,
                 "height": 958
