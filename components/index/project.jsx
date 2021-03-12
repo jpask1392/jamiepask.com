@@ -36,7 +36,7 @@ const variants = {
 const Project = ({className, data, updateIndex, index, indexInView}) => {
   const [isHover, setIsHover] = useState(false)
   const { ref, inView } = useInView({
-    threshold: 1
+    rootMargin: `-${(window.innerHeight / 2) - 1}px 0px -${window.innerHeight / 2}px 0px`
   });
 
 
@@ -66,9 +66,15 @@ const Project = ({className, data, updateIndex, index, indexInView}) => {
               alt="Picture of the author"
               width={data.hero.width}
               height={data.hero.height}
+              sizes="
+                (max-width: 767px) 100px,
+                (min-width: 768px) and (max-width: 999px) 300px, 
+                (min-width: 1000px) and (max-width: 1999px) 400px, 
+                (min-width: 2000px) and (max-width: 2500px) 500px,
+                100vw"
             />
           </div>
-          <motion.h4 variants={variants} className="title">{data.name}</motion.h4>
+          <motion.h3 variants={variants} className="title">{data.name}</motion.h3>
           <motion.span variants={variants} className="arrow"><SVG src="/svg/arrow.svg" /></motion.span>
           <motion.span variants={variants} className="category">{data.category}</motion.span>
           <motion.time variants={variants} dateTime={data.date}>{data.date}</motion.time>
@@ -156,6 +162,7 @@ export default styled(Project)`
     top: 30px;
     left: 30px;
     font-size: 14px;
+    text-transform: capitalize;
 
     @media ${breakpoint.lg} {
       top: ${columnWidth(0.5)};

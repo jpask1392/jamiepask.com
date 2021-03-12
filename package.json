@@ -9,6 +9,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "framer-motion": "^3.6.2",
     "next": "10.0.7",
     "pixi.js": "^6.0.0",

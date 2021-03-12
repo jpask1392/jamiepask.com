@@ -7,10 +7,20 @@ import styled from 'styled-components'
  * Functional component to use nextjs Image with cloudinary
  */
 const myLoader = ({ src, width }) => {
-  return `https://res.cloudinary.com/djetpo84s/image/upload/w_${width}/v1614310082/jamiepask.com/${src}`
+  return `https://res.cloudinary.com/djetpo84s/image/upload/w_${width},f_auto/v1614310082/jamiepask.com/${src}`
 }
 
-const Cimage = ({width, height, src, className}) => {
+const myLoaderBlur = ({ src, width }) => {
+  return `https://res.cloudinary.com/djetpo84s/image/upload/e_blur:200,w_100/v1614310082/jamiepask.com/${src}`
+}
+
+const Cimage = ({
+  width,
+  height,
+  src,
+  className,
+  sizes = "(min-width: 1000px) and (max-width: 1999px) 800px, (min-width: 2000px) 1500px, 100vw"
+}) => {
   // const cloundinary_id = "djetpo84s"
   const [ loading, setLoading ] = useState(true)
 
@@ -23,20 +33,23 @@ const Cimage = ({width, height, src, className}) => {
     { 
       loading && 
         <div style={{ width: "100%",position: "absolute" }}>
-          <img 
-            style={{ width: "100%" }}
-            src={`https://res.cloudinary.com/djetpo84s/image/upload/e_blur:200,w_100/v1614310082/jamiepask.com/${src}`}
-            alt="loading"
+          <Image
+            src={src}
+            alt="Loading"
+            width={width}
+            height={height}
+            loader={myLoaderBlur}
           />
         </div> 
     }
+
     <Image
         src={src}
         alt="Picture of the author"
         loader={myLoader}
         width={width}
         height={height}
-        sizes="(min-width: 1000px) 400px"
+        sizes={sizes}
         onLoad={handleLoad}
       />
     </div>

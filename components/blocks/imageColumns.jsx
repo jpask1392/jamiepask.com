@@ -1,6 +1,6 @@
 // Dependencies
 import styled from 'styled-components'
-import { container, columnWidth } from 'styles/sc-mixins'
+import { container, columnWidth, breakpoint } from 'styles/sc-mixins'
 import Cimage from 'components/common/cImage'
 
 // Component
@@ -8,10 +8,11 @@ const ImageColumms = ({className, data, bg}) => {
   return (
     <div className={className}>
       {
-        data.content.map(column => (
+        data.content.map((column, i) => (
           <Cimage
+            key={i}
             src={column.image.src}
-            alt="Picture of the author"
+            alt={column.image.alt}
             width={column.image.width}
             height={column.image.height}
             layout="responsive"
@@ -24,7 +25,11 @@ const ImageColumms = ({className, data, bg}) => {
 
 // Export
 export default styled(ImageColumms)`
-  ${container(10, 0)}
+  margin: 15px 30px;
+
+  @media ${breakpoint.md} {
+    ${container(10, 0)}
+  }
 
   display: grid;
   grid-template-columns: repeat(${({data}) => data.columnCount}, 1fr);

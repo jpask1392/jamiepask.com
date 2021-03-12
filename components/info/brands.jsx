@@ -1,13 +1,21 @@
 // Dependencies
 import styled from 'styled-components'
 import { container, breakpoint, columnWidth } from 'styles/sc-mixins'
-import tinycolor from 'tinycolor2'
+import Cimage from 'components/common/cImage'
 
 // Component
 const Brands = ({className, data, bg}) => {
   return (
     <div className={className}>
-      { data.brands.map((brand, i) => <img key={i} src={brand.image.src} />)  }
+      { data.brands.map((brand, i) => (
+        <Cimage
+          src={brand.image.src}
+          alt="Brand Logo"
+          width={brand.image.width}
+          height={brand.image.height}
+          sizes="100px"
+        />
+      ))  }
     </div>
   )
 }
@@ -17,7 +25,7 @@ export default styled(Brands)`
   margin: 15px 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: ${columnWidth(1)};
+  column-gap: ${columnWidth(0.75)};
   row-gap: 30px;
 
   @media ${breakpoint.md} {
@@ -39,7 +47,7 @@ export default styled(Brands)`
 
   img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
   }
 `

@@ -14,7 +14,7 @@ const Footer = ({className}) => {
   return (
     <footer className={className}>
       { socials.map(({link, iconName}) => (
-        <a href={link} target="_blank" key={iconName}>
+        <a href={link} target="_blank" key={iconName} rel="noreferrer">
           <SVG src={`/svg/${iconName}.svg`} />
         </a>
       ))}

@@ -6,8 +6,4 @@ import carkella from 'data/case-studies/carkella';
 import loveleo from 'data/case-studies/loveleo';
 import portfolio from 'data/case-studies/portfolio';
 
-const array = [
-  mutesix, techtonic, houseConcepts, ilola, carkella, loveleo, portfolio
-]
-
-export default array
+export default [ mutesix, techtonic, houseConcepts, ilola, carkella, loveleo, portfolio ]

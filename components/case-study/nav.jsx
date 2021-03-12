@@ -13,7 +13,7 @@ const Nav = ({className, data}) => {
         <a className="arrow back-arrow"><SVG src="/svg/arrow.svg" /></a>
       </Link>
 
-      <a className="arrow launch-arrow" href={data.url} target="_blank">
+      <a className="arrow launch-arrow" href={data.url} target="_blank" rel="noreferrer">
         <SVG src="/svg/arrow.svg" />
       </a>
     </nav>
@@ -24,7 +24,7 @@ const Nav = ({className, data}) => {
         <a className="arrow back-arrow"><SVG src="/svg/arrow.svg" /></a>
       </Link>
 
-      <a className="arrow launch-arrow" href={data.url} target="_blank">
+      <a className="arrow launch-arrow" href={data.url} target="_blank" rel="noreferrer">
         <SVG src="/svg/arrow.svg" />
       </a>
     </nav>
@@ -60,6 +60,8 @@ export default styled(Nav)`
     align-items: center;
     padding: 1rem;
     box-sizing: border-box;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s;
 
     @media ${breakpoint.lg} {
       width: 65px;
@@ -70,6 +72,10 @@ export default styled(Nav)`
       fill: white;
       width: 100%;
       height: 100%;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.5);
     }
   }
 

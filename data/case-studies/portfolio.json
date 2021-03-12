@@ -12,7 +12,7 @@
       "content": "This is an exploration of modern web technologies in an effort to improve my understanding of how the world of web works and how we interact with it every day."
     },
     "image": {
-      "src": "/portfolio/hero_jv5ln6.png",
+      "src": "/portfolio/hero_jv5ln6.jpg",
       "alt": "",
       "width": 778,
       "height": 564
@@ -49,7 +49,7 @@
           "type": "lgImage",
           "widthInCols": 10,
           "image": {
-            "src": "/portfolio/iterations_uwkgne.png",
+            "src": "/portfolio/iterations_uwkgne.jpg",
             "alt": "",
             "width": 2452,
             "height": 1374
@@ -70,7 +70,7 @@
           "type": "lgImage",
           "widthInCols": 8,
           "image": {
-            "src": "/portfolio/mockup2_yew1qz.png",
+            "src": "/portfolio/mockup2_yew1qz.jpg",
             "alt": "",
             "width": 778,
             "height": 564
@@ -81,7 +81,7 @@
           "type": "lgImage",
           "widthInCols": 8,
           "image": {
-            "src": "/portfolio/mockup1_m7yek8.png",
+            "src": "/portfolio/mockup1_m7yek8.jpg",
             "alt": "",
             "width": 778,
             "height": 564
@@ -95,7 +95,7 @@
           "content": [
             {
               "image": {
-                "src": "/portfolio/phone3_iirodn.png",
+                "src": "/portfolio/phone3_iirodn.jpg",
                 "alt": "",
                 "width": 472,
                 "height": 958
@@ -103,7 +103,7 @@
             },
             {
               "image": {
-                "src": "/portfolio/phone1_usxyo6.png",
+                "src": "/portfolio/phone1_usxyo6.jpg",
                 "alt": "",
                 "width": 472,
                 "height": 958
@@ -111,7 +111,7 @@
             },
             {
               "image": {
-                "src": "/portfolio/phone2_it6wfa.png",
+                "src": "/portfolio/phone2_it6wfa.jpg",
                 "alt": "",
                 "width": 472,
                 "height": 958
