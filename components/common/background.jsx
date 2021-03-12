@@ -1,13 +1,30 @@
 // Dependencies
 import styled from 'styled-components'
+import { useEffect, useRef } from "react";
 
 // Component
-const Background = ({className}) => (
-  <div className={className} id="">
-    <div className="lhs"></div>
-    <div className="rhs"></div>
-  </div>
-)
+const Background = ({className}) => { 
+  const ref = useRef()
+
+  useEffect(() => {
+    const canvas = ref.current
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // draw shape
+    var ctx = canvas.getContext("2d")
+    ctx.beginPath()
+    ctx.arc(100, 75, 50, 0, 2 * Math.PI)
+    ctx.stroke()
+
+  }, [])
+
+  return (
+    <div className={className}>
+      <canvas ref={ref} width="300" height="150"></canvas>
+    </div>
+  )
+}
 
 // Export
 export default styled(Background)`
