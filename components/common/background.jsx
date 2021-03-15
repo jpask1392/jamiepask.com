@@ -28,7 +28,6 @@ const Background = ({className}) => {
 
 // Export
 export default styled(Background)`
-  mix-blend-mode: multiply;
   position: fixed;
   z-index: 0;
   left: 0;
