@@ -110,10 +110,6 @@ export default styled(Nav)`
     align-items: center;
   }
 
-  .lhs {
-    background: radial-gradient(100% 100% at top left, black, white) !important;
-  }
-
   .socials {
     position: absolute;
     bottom: ${columnWidth(0.65)};
