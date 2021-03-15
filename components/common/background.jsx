@@ -2,12 +2,14 @@
 import styled from 'styled-components'
 
 // Component
-const Background = ({className}) => (
-  <div className={className} id="">
-    <div className="lhs"></div>
-    <div className="rhs"></div>
-  </div>
-)
+const Background = ({className}) => {
+  return (
+    <div className={className}>
+      <img className="lhs" src="/global/background-blur.png" alt=""/>
+      <img className="rhs" src="/global/background-blur.png" alt=""/>
+    </div>
+  )
+}
 
 // Export
 export default styled(Background)`
@@ -22,8 +24,8 @@ export default styled(Background)`
   .lhs,
   .rhs {
     position: absolute;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     opacity: 0.3;
   }
@@ -31,12 +33,12 @@ export default styled(Background)`
   .lhs {
     left: 0;
     top: 0;
-    background: radial-gradient(100% 100% at top left, #012E95, white);
+    transform: translate(-50%, -50%);
   }
 
   .rhs {
     right: 0;
     bottom: 0;
-    background: radial-gradient(100% 100% at bottom right, #012E95, white);
+    transform: translate(50%, 50%);
   }
 `
