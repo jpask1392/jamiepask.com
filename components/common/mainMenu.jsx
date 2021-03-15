@@ -62,7 +62,7 @@ const Nav = ({className, setOpen}) => {
         animate={{ opacity: [0, 1], transition: {delay: 0.6} }}
       >
         { socials.map(({link, iconName}) => (
-          <a href={link} target="_blank" key={iconName} rel="noreferrer">
+          <a href={link} target="_blank" key={iconName} rel="noreferrer" aria-label={link}>
             <SVG src={`/svg/${iconName}.svg`} />
           </a>
         ))}

@@ -11,6 +11,7 @@ const Background = ({className}) => {
           src="/global/background-blur_ptgv7e"
           alt="background blur"
           layout="fill"
+          sizes="(min-width: 768px) 25vw"
         />
       </div>
       <div className="rhs">
@@ -18,6 +19,7 @@ const Background = ({className}) => {
           src="/global/background-blur_ptgv7e"
           alt="background blur"
           layout="fill"
+          sizes="(min-width: 768px) 25vw"
         />
       </div>
     </div>

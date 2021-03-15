@@ -14,7 +14,7 @@ const Nav = ({className}) => {
   return (
     <nav className={className}>
       <Link href="/">
-        <a className={`logo ${open ? 'logo--white' : 'logo--black'}`}>
+        <a className={`logo ${open ? 'logo--white' : 'logo--black'}`} aria-label="Logo">
           <SVG src="/svg/waving-hand.svg" />
         </a>
       </Link>
