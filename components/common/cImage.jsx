@@ -15,10 +15,11 @@ const myLoaderBlur = ({ src, width }) => {
 }
 
 const Cimage = ({
-  width,
-  height,
+  width = false,
+  height = false,
   src,
   className,
+  layout = 'responsive',
   sizes = "(min-width: 1000px) and (max-width: 1999px) 800px, (min-width: 2000px) 1500px, 100vw"
 }) => {
   // const cloundinary_id = "djetpo84s"
@@ -39,6 +40,7 @@ const Cimage = ({
             width={width}
             height={height}
             loader={myLoaderBlur}
+            layout={layout}
           />
         </div> 
     }
@@ -51,6 +53,7 @@ const Cimage = ({
         height={height}
         sizes={sizes}
         onLoad={handleLoad}
+        layout={layout}
       />
     </div>
   )

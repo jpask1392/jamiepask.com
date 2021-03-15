@@ -1,12 +1,25 @@
 // Dependencies
 import styled from 'styled-components'
+import Cimage from 'components/common/cImage'
 
 // Component
 const Background = ({className}) => {
   return (
     <div className={className}>
-      <img className="lhs" src="/global/background-blur.png" alt=""/>
-      <img className="rhs" src="/global/background-blur.png" alt=""/>
+      <div className="lhs">
+        <Cimage
+          src="/global/background-blur_ptgv7e"
+          alt="background blur"
+          layout="fill"
+        />
+      </div>
+      <div className="rhs">
+        <Cimage
+          src="/global/background-blur_ptgv7e"
+          alt="background blur"
+          layout="fill"
+        />
+      </div>
     </div>
   )
 }
@@ -28,6 +41,10 @@ export default styled(Background)`
     height: 100%;
     z-index: -1;
     opacity: 0.3;
+
+    > div {
+      height: 100%;
+    }
   }
 
   .lhs {
