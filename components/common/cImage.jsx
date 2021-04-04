@@ -20,7 +20,8 @@ const Cimage = ({
   src,
   className,
   layout = 'responsive',
-  sizes = "(min-width: 1000px) and (max-width: 1999px) 800px, (min-width: 2000px) 1500px, 100vw"
+  sizes = "(min-width: 1000px) and (max-width: 1999px) 800px, (min-width: 2000px) 1500px, 100vw",
+  priority = false
 }) => {
   // const cloundinary_id = "djetpo84s"
   const [ loading, setLoading ] = useState(true)
@@ -54,6 +55,7 @@ const Cimage = ({
         sizes={sizes}
         onLoad={handleLoad}
         layout={layout}
+        priority={priority}
       />
     </div>
   )

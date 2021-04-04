@@ -12,6 +12,7 @@ const Background = ({className}) => {
           alt="background blur"
           layout="fill"
           sizes="(min-width: 768px) 25vw"
+          priority={true}
         />
       </div>
       <div className="rhs">
@@ -20,6 +21,7 @@ const Background = ({className}) => {
           alt="background blur"
           layout="fill"
           sizes="(min-width: 768px) 25vw"
+          priority={true}
         />
       </div>
     </div>
