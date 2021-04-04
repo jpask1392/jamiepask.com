@@ -11,7 +11,7 @@ const myLoader = ({ src, width }) => {
 }
 
 const myLoaderBlur = ({ src, width }) => {
-  return `https://res.cloudinary.com/djetpo84s/image/upload/e_blur:200,w_100/v1614310082/jamiepask.com/${src}`
+  return `https://res.cloudinary.com/djetpo84s/image/upload/e_blur:200,w_100,f_auto/v1614310082/jamiepask.com/${src}`
 }
 
 const Cimage = ({

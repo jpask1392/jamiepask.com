@@ -17,17 +17,6 @@ const Nav = ({className, data}) => {
         <SVG src="/svg/arrow.svg" />
       </a>
     </nav>
-
-    {/* Duplicate for mix blend mode coloring */}
-    <nav className={`${className} mix-blend`}>
-      <Link href="/">
-        <a className="arrow back-arrow"><SVG src="/svg/arrow.svg" /></a>
-      </Link>
-
-      <a className="arrow launch-arrow" href={data.url} target="_blank" rel="noreferrer">
-        <SVG src="/svg/arrow.svg" />
-      </a>
-    </nav>
     </>
   )
 }
@@ -75,7 +64,7 @@ export default styled(Nav)`
     }
 
     &:hover {
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.1);
     }
   }
 

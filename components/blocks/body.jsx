@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { container, columnWidth, breakpoint } from 'styles/sc-mixins'
 import tinycolor from 'tinycolor2'
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 
 const variants = {
   visible: {

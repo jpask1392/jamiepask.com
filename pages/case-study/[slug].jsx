@@ -8,19 +8,23 @@ import dataset from 'data/case-studies'
 import { Nav, Hero, Footer } from 'components/case-study'
 import { Seo } from 'components/common'
 import Section from 'components/common/section'
+import { useState } from 'react';
 
 // this is a react component definition
-const Project = ({project, nextProject}) => (
-  <>
-    <Seo title={project.name} />
-    <Nav data={project} />
-    <main className="case-study bg-white">
-      <Hero data={project} />
-      { project.sections.map((section) => <Section data={section} key={section.id} /> )}
-    </main>
-    <Footer data={project} next={nextProject} />
-  </>
-)
+const Project = ({project, nextProject}) => {
+  // need to trigger a state change here? 
+
+  return (
+    <>
+      <Seo title={project.name} />
+      <Nav data={project} />
+      <main className="case-study bg-white">
+        <Hero data={project} />
+        { project.sections.map((section) => <Section data={section} key={section.id} /> )}
+      </main>
+      <Footer data={project} next={nextProject} />
+    </>
+)}
 
 
 /**
