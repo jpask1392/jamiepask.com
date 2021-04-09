@@ -1,16 +1,22 @@
 // Dependencies
 import styled from 'styled-components'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { selectLoading, update } from 'redux/reducers/loader'
 
 // Component
 const LoadingScreen = ({className}) => {
-  const [isLoading, setIsLoading] = useState(true)
+  // const [isLoading, setIsLoading] = useState(true)
   const loadingTimer = 1; // in seconds
+
+  // get current state of cursor from redux
+  const isLoading = useSelector(selectLoading)
+  const dispatch = useDispatch()
 
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading(false)
+      dispatch(update(false))
     }, 1500)
   }, [])
 
