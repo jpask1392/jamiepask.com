@@ -11,15 +11,17 @@ const myLoader = ({ src, width }) => {
 }
 
 const myLoaderBlur = ({ src, width }) => {
-  return `https://res.cloudinary.com/djetpo84s/image/upload/e_blur:200,w_100/v1614310082/jamiepask.com/${src}`
+  return `https://res.cloudinary.com/djetpo84s/image/upload/e_blur:200,w_100,f_auto/v1614310082/jamiepask.com/${src}`
 }
 
 const Cimage = ({
-  width,
-  height,
+  width = false,
+  height = false,
   src,
   className,
-  sizes = "(min-width: 1000px) and (max-width: 1999px) 800px, (min-width: 2000px) 1500px, 100vw"
+  layout = 'responsive',
+  sizes = "(min-width: 1000px) and (max-width: 1999px) 800px, (min-width: 2000px) 1500px, 100vw",
+  priority = false
 }) => {
   // const cloundinary_id = "djetpo84s"
   const [ loading, setLoading ] = useState(true)
@@ -39,6 +41,7 @@ const Cimage = ({
             width={width}
             height={height}
             loader={myLoaderBlur}
+            layout={layout}
           />
         </div> 
     }
@@ -51,6 +54,8 @@ const Cimage = ({
         height={height}
         sizes={sizes}
         onLoad={handleLoad}
+        layout={layout}
+        priority={priority}
       />
     </div>
   )

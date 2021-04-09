@@ -6,12 +6,14 @@ import tinycolor from 'tinycolor2'
 import Cimage from 'components/common/cImage'
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useEffect, useState } from 'react'
 
 // Component
 const Hero = ({className, data}) => {
-  const { ref, inView } = useInView({
-    threshold: 0.2,
+  const { ref, inView, entry } = useInView({
+    threshold: 0,
     triggerOnce	: true,
+    initialInView : false,
   });
 
   return (

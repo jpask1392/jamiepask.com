@@ -6,8 +6,10 @@ import Cimage from 'components/common/cImage'
 import SVG from 'react-inlinesvg'
 import tinycolor from 'tinycolor2'
 import { useState, useRef, useEffect } from 'react'
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { useDispatch } from 'react-redux'
+import { update } from 'redux/reducers/cursor'
 
 const variants = {
   visible: {
@@ -31,27 +33,46 @@ const variants = {
 }
 
 
-
 // Component
 const Project = ({className, data, updateIndex, index, indexInView}) => {
   const [isHover, setIsHover] = useState(false)
+  const dispatch = useDispatch()
   const { ref, inView } = useInView({
     rootMargin: `-${(window.innerHeight / 2) - 1}px 0px -${window.innerHeight / 2}px 0px`
   });
+  
+  const handleMouseOver = () => {
+    setIsHover(true) // handle animation
 
+    // update cursor state with redux
+    dispatch(update('hover'))
+  }
+
+  const handleMouseLeave = () => {
+    setIsHover(false) // handle animation
+
+    // update cursor state with redux
+    dispatch(update('base'))
+  }
 
   useEffect(() => {
     if (inView) updateIndex(index)
   }, [inView]);
 
+  useEffect(() => {
+    // remove cursor icon after clicked
+    return () => dispatch(update('base'))
+  }, []);
+
   return (
     <motion.article 
-      className={`${className}`}
+      id={data.slug}
+      className={`project ${className}`}
       ref={ref}
       animate={indexInView === index ? "visible" : "hidden"} 
       variants={ {visible:{transition:{staggerChildren: 0.1}}} }
-      onMouseEnter={() => setIsHover(true)}
-      onMouseLeave={() => setIsHover(false)}
+      onMouseEnter={handleMouseOver}
+      onMouseLeave={handleMouseLeave}
     >
       <Link href={`/case-study/${data.slug}`}>
         <a>

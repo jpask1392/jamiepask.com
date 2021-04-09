@@ -1,23 +1,21 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-<<<<<<< Updated upstream
-  cursor: none;
-  background-color: white;
-=======
-  // cursor: none;
-  // background-color: white;
->>>>>>> Stashed changes
-}
-
 html *,
 body * {
-    cursor: none !important;
+    // cursor: none !important;
+}
+
+#__next {
+  overflow: hidden;
 }
 
 main {
   overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  position: relative;
+  z-index: 1;
 }
 
 .bg-white {

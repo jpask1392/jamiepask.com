@@ -1,34 +1,35 @@
 // Dependencies
 import styled from 'styled-components'
-import { useEffect, useRef } from "react";
+import Cimage from 'components/common/cImage'
 
 // Component
-const Background = ({className}) => { 
-  const ref = useRef()
-
-  useEffect(() => {
-    const canvas = ref.current
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    // draw shape
-    var ctx = canvas.getContext("2d")
-    ctx.beginPath()
-    ctx.arc(100, 75, 50, 0, 2 * Math.PI)
-    ctx.stroke()
-
-  }, [])
-
+const Background = ({className}) => {
   return (
     <div className={className}>
-      <canvas ref={ref} width="300" height="150"></canvas>
+      <div className="lhs">
+        <Cimage
+          src="/global/background-blur_ptgv7e"
+          alt="background blur"
+          layout="fill"
+          sizes="(min-width: 768px) 25vw"
+          priority={true}
+        />
+      </div>
+      <div className="rhs">
+        <Cimage
+          src="/global/background-blur_ptgv7e"
+          alt="background blur"
+          layout="fill"
+          sizes="(min-width: 768px) 25vw"
+          priority={true}
+        />
+      </div>
     </div>
   )
 }
 
 // Export
 export default styled(Background)`
-  mix-blend-mode: multiply;
   position: fixed;
   z-index: 0;
   left: 0;
@@ -41,21 +42,25 @@ export default styled(Background)`
   .lhs,
   .rhs {
     position: absolute;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     opacity: 0.3;
+
+    > div {
+      height: 100%;
+    }
   }
 
   .lhs {
     left: 0;
     top: 0;
-    background: radial-gradient(100% 100% at top left, #012E95, white);
+    transform: translate(-50%, -50%);
   }
 
   .rhs {
     right: 0;
     bottom: 0;
-    background: radial-gradient(100% 100% at bottom right, #012E95, white);
+    transform: translate(50%, 50%);
   }
 `

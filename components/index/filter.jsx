@@ -29,12 +29,12 @@ const Filter = ({className, updateResults, projects}) => {
       {filters.map(({name, active}) => (
         <li 
           className={active ? 'active' : ''} 
-          onClick={() => handleClick(name)}
           key={name}>
-            <a>{name} 
-            <sup className="count">
-              {projects.filter(project => project.category === name).length}
-            </sup>
+            <a onClick={() => handleClick(name)}>
+              {name} 
+              <sup className="count">
+                {projects.filter(project => project.category === name).length}
+              </sup>
             </a>
         </li>  
       ))}
@@ -48,6 +48,8 @@ export default styled(Filter)`
   padding: 0 10px;
   list-style-type: none;
   display: flex;
+  position: relative;
+  z-index: 1;
 
   @media ${breakpoint.md} {
     ${container(10, 0)}
@@ -57,7 +59,6 @@ export default styled(Filter)`
     margin-right: 15px;
     opacity: 0.45;
     font-size: 15px;
-    cursor: pointer;
     margin-bottom: 0.5rem;
     transition: opacity 0.3s;
 
@@ -73,6 +74,7 @@ export default styled(Filter)`
 
     &:hover {
       opacity: 1;
+      cursor: pointer;
     }
   }
 

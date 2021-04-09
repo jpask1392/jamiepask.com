@@ -1,14 +1,25 @@
 // Dependencies
 import styled from 'styled-components'
 import { container, breakpoint } from 'styles/sc-mixins'
-import { useState, useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { update } from 'redux/reducers/cursor'
 
 // Component
 const LoadingCard = ({className}) => {
+  const dispatch = useDispatch()
+  const handleMouseOver = () => dispatch(update('hover'))
+  const handleMouseLeave = () => dispatch(update('base'))
+  
   return (
     <>
-      <div className={className}></div>
-      <div className={className}></div>
+      <div  className={className}
+            onMouseEnter={handleMouseOver}
+            onMouseLeave={handleMouseLeave}
+      />
+      <div  className={className}
+            onMouseEnter={handleMouseOver}
+            onMouseLeave={handleMouseLeave}
+      />
     </>
   )
 }

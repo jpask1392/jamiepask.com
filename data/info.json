@@ -152,16 +152,16 @@
         "type": "timeline",
         "dateStart": "Dec 2019",
         "dateEnd": "Present",
-        "company": "Techyscouts, Los Angeles, ca",
-        "content": "I began working with Techyscouts at the end of 2019 as a contractor,  building out various themes with Wordpress and then eventually, Shopify.\n\nDuring my time with them, I have personally developed techniques for quality control, implemented CI/CD techniques and consistently improved my understanding of web technologies."
+        "company": "Lead Developer | Techyscouts | Los Angeles, ca",
+        "content": "Produced technical solutions for a variety of issues, ranging from UI to hosting issues • Consumed a range of third party API’s. For instance, I’ve used Loyalty Lion’s API to generate custom CSV files, exporting and storing for local download within an S3 bucket • Coordinated development, deployment and maintenance techniques for collaborative work. In particular, creating local environments within Docker containers, incorporating CI/CD processes with GIT hooks and documenting preferred workflows for future projects.\n\n I've also built custom Wordpress themes, Shopify themes and apps using modern build tools, specifically, Webpack and Gulp, to incorporate current web technologies and improve maintainability • Replicated Figma/Photoshop/XD files to pixel accuracy • Adhered to coding standards through consistent research and incorporating linters into my workflow."
       },
       {
         "id": 5,
         "type": "timeline",
-        "dateStart": "Nov 2020",
+        "dateStart": "August 2020",
         "dateEnd": "Present",
-        "company": "Various,  Vancouver, bc",
-        "content": "I have also been fortunate enough to be in contact with a few companies in Vancouver and contracted work for them including Nextjs and Shopify builds."
+        "company": "Web Developer | Freelance",
+        "content": "Incorporated Shopify into a pre-existing NextJS application by consuming the Storefront API. The project involved pulling Shopify product data for displaying and filtering, creating a functional ajax cart with Redux state management and ensuring a robust checkout system • Used a git workflow to assist senior developers • Made various improvements and bug fixes for multiple clients in both Shopify and Wordpress sites • Built emailing templates through Mailchimp and other CRM’s."
       }
     ]
   }

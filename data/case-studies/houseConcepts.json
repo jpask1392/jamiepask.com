@@ -40,7 +40,7 @@
           "content": "The majority of the site had already been built out before I joined the team, using a Nextjs set up. The client was looking to add a new section of the site to house a product store. They wanted to manage this data themselves so to avoid a large overhead of CMS creation, we opted to go with a Shopify backend."
         },
         {
-          "id": 3,
+          "id": 4,
           "type": "body",
           "content": "To create a connection between the two systems and use Shopify as a headless CMS, I implemented the storefront api with GraphQL for efficiency. "
         }
@@ -67,7 +67,7 @@
           "content": "After setting up a simple shopify store, the client began adding products for me to test. I collected the data via Shopify’s storefront api and stored state of the app with Redux to enable global features without creating a mess of the components with props eg the Ajax cart."
         },
         {
-          "id": 3,
+          "id": 4,
           "type": "body",
           "content": "I was then able to generate a checkout link and take advantage of Shopify’s already built out checkout system to handle client payments."
         }
