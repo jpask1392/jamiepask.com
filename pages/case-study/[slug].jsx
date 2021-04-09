@@ -10,6 +10,7 @@ import { Seo } from 'components/common'
 import Section from 'components/common/section'
 
 // this is a react component definition
+<<<<<<< Updated upstream
 const Project = ({project, nextProject}) => (
   <>
     <Seo title={project.name} />
@@ -21,6 +22,22 @@ const Project = ({project, nextProject}) => (
     <Footer data={project} next={nextProject} />
   </>
 )
+=======
+const Project = ({project, nextProject}) => {
+  // need to trigger a state change here? 
+
+  return (
+    <>
+      <Seo title={project.name} />
+      <Nav data={project} />
+      <main className="case-study">
+        <Hero data={project} />
+        { project.sections.map((section) => <Section data={section} key={section.id} /> )}
+      </main>
+      <Footer data={project} next={nextProject} />
+    </>
+)}
+>>>>>>> Stashed changes
 
 
 /**

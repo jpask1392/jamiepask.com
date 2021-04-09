@@ -16,7 +16,7 @@ const Hero = ({className, data}) => {
 
   return (
     <header className={className}>
-      <motion.div className="background" layoutId="test"></motion.div>
+      {/* <motion.div className="background" layoutId="test"></motion.div> */}
 
       <div className="title">
         <h1>{data.name}</h1>

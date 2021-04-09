@@ -90,6 +90,41 @@ const Cursor = ({className}) => {
 };
 
 export default styled(Cursor)`
+<<<<<<< Updated upstream
+=======
+  display: none;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+
+  @media ${breakpoint.sm} {
+    display: block;
+  }
+
+  &.view {
+    color: white;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+    width: 150px;
+    height: 150px;
+    letter-spacing: 0.1em;
+
+    @media ${breakpoint.lg} {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+>>>>>>> Stashed changes
   &.cursor {
     width: 15px;
     height: 15px;
