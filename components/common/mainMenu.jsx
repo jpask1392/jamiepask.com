@@ -1,7 +1,7 @@
 // Dependencies
 import Link from 'next/link'
 import styled from 'styled-components'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 import { columnWidth } from 'styles/sc-mixins'
 import { Background } from 'components/common'
 import SVG from 'react-inlinesvg'
