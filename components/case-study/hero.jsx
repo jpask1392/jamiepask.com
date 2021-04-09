@@ -65,7 +65,8 @@ export default styled(Hero)`
     height: 1000px;
     width: 100%;
     position: fixed;
-    top:0;
+    top: 0;
+    z-index: -1;
   }
 
   + section {

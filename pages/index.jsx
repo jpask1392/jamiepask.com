@@ -7,7 +7,7 @@ const Index = () => (
   <>
     <Seo title="Work" />
     <Nav />
-    <LoadingScreen />
+    {/* <LoadingScreen /> */}
     <main className="home">
       <Hero header="Work." subheader="v2.0" />
       <Projects />
