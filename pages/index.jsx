@@ -6,8 +6,8 @@ import { Projects } from 'components/index'
 const Index = () => (
   <>
     <Seo title="Work" />
-    <LoadingScreen />
     <Nav />
+    <LoadingScreen />
     <main className="home">
       <Hero header="Work." subheader="v2.0" />
       <Projects />

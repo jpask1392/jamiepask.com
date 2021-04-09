@@ -29,9 +29,6 @@ const LoadingScreen = ({className}) => {
             exit={{ opacity: 0 }}
           >
             <div className="loading">
-              {/* <div className="loading__count">
-                01%
-              </div> */}
               <motion.div 
                 className="loading__bar"
                 animate={{ y: -30, opacity: 0, width: 175 }}
