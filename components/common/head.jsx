@@ -16,7 +16,7 @@ const HeadComponent = ({ title = '' }) => {
       <title>{ title }</title>
 
       <link rel="preload" href="https://use.typekit.net/uuv2xsf.css" as="style" />
-      <link rel="stylesheet" href="https://use.typekit.net/uuv2xsf.css" />
+      {/* <link rel="stylesheet" href="https://use.typekit.net/uuv2xsf.css" /> */}
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106964088-2"></script>
 
       <script
