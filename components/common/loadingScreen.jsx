@@ -8,7 +8,7 @@ import { selectLoading, update } from 'redux/reducers/loader'
 // Component
 const LoadingScreen = ({className}) => {
   // const [isLoading, setIsLoading] = useState(true)
-  const loadingTimer = 5; // in seconds
+  const loadingTimer = 0.4; // in seconds
 
   // get current state of cursor from redux
   const isLoading = useSelector(selectLoading)
@@ -17,7 +17,7 @@ const LoadingScreen = ({className}) => {
   useEffect(() => {
     setTimeout(() => {
       dispatch(update(false))
-    }, 4000)
+    }, 1000)
   }, [])
 
   return (

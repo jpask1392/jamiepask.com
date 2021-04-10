@@ -1,11 +1,17 @@
 // Dependencies
 import styled from 'styled-components'
 import { container, breakpoint, columnWidth } from 'styles/sc-mixins'
+import { motion } from 'framer-motion'
 
 // Component
 const Hero = ({className, header, subheader}) => (
   <header className={className}>
-    <h1>{header}</h1>
+    <motion.h1
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: 'easeOut', delay: 0.3 }}
+    >
+      {header}
+    </motion.h1>
     <h2 className="subtext">{subheader}</h2>
   </header>
 )
@@ -30,6 +36,7 @@ export default styled(Hero)`
   h1 {
     font-size: 80px;
     line-height: 1;
+    // opacity: 0;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
