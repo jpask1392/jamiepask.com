@@ -17,7 +17,7 @@ const LoadingScreen = ({className}) => {
   useEffect(() => {
     setTimeout(() => {
       dispatch(update(false))
-    }, 1000)
+    }, 4000)
   }, [])
 
   return (
