@@ -63,9 +63,7 @@ export default styled(Body)`
     padding-top: ${columnWidth(1)};
   }
 
-  + p::before {
-    content: "-";
-    display: block;
-    visibility: hidden;
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
   }
 `

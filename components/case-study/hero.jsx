@@ -29,7 +29,7 @@ const Hero = ({className, data}) => {
         id="overview"
         ref={ref}
         animate={inView ? "visible" : "hidden"} 
-        variants={ {visible:{transition:{staggerChildren: 0.2}}} }
+        variants={ {visible:{transition:{staggerChildren: 0.1}}} }
       >
         <SmHeaderReport data={{"number": "1.0", "title": "Overview"}} bg={data.bg} />
         <LgHeader data={data.overview.header} bg={data.bg} />

@@ -2,13 +2,14 @@
 import Link from 'next/link'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import { columnWidth } from 'styles/sc-mixins'
+import { columnWidth, breakpoint } from 'styles/sc-mixins'
 import { Background } from 'components/common'
 import SVG from 'react-inlinesvg'
 
 const menuItems = [
   { name: "Work", link: "/" },
   { name: "Info", link: "/info" },
+  { name: "Resume", link: "/resume-2021.pdf" },
 ]
 
 const socials = [
@@ -34,25 +35,46 @@ const Nav = ({className, setOpen}) => {
       >
         { menuItems.map((menuItem, i) => (
           <li key={i}>
-            <Link 
-              href={menuItem.link}
-            >
-              <motion.a 
-                onClick={() => setOpen(false)}
-                initial={{ opacity: 0 }}
-                variants={{ visible: {
-                  opacity: [0, 0.6],
-                  y: ["6rem", "0rem"],
-                  skewY: [5, 0],
-                  transition: {
-                    ease: "easeOut",
-                    duration: 0.6,
-                  }
-                }, }}
-              >
-                {menuItem.name}
-              </motion.a>
-            </Link>
+            { menuItem.name !== "Resume" 
+              ? (
+                <Link 
+                  href={menuItem.link}
+                >
+                  <motion.a 
+                    onClick={() => setOpen(false)}
+                    initial={{ opacity: 0 }}
+                    variants={{ visible: {
+                      opacity: [0, 0.6],
+                      y: ["6rem", "0rem"],
+                      skewY: [5, 0],
+                      transition: {
+                        ease: "easeOut",
+                        duration: 0.6,
+                      }
+                    }, }}
+                  >
+                    {menuItem.name}
+                  </motion.a>
+                </Link>
+              ) : (
+                <motion.a
+                  target="_blank"
+                  href={menuItem.link}
+                  initial={{ opacity: 0 }}
+                  variants={{ visible: {
+                    opacity: [0, 0.6],
+                    y: ["6rem", "0rem"],
+                    skewY: [5, 0],
+                    transition: {
+                      ease: "easeOut",
+                      duration: 0.6,
+                    }
+                  }, }}
+                >
+                  {menuItem.name}
+                </motion.a>
+              )
+            }
           </li>
         )) }
       </motion.ul>
@@ -93,10 +115,14 @@ export default styled(Nav)`
     a {
       display: block;
       color: white;
-      font-size: 40px;
+      font-size: 30px;
       text-decoration: none;
       cursor: pointer;
       transition: opacity 0.3s;
+
+      @media ${breakpoint.lg} {
+        font-size: 40px;
+      }
   
       &:hover {
         opacity: 1 !important;
@@ -105,7 +131,7 @@ export default styled(Nav)`
   }
 
   li:not(:last-of-type) {
-    margin-right: ${columnWidth(1)};
+    margin-right: ${columnWidth(0.75)};
     display: flex;
     align-items: center;
   }

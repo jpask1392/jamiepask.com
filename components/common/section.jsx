@@ -32,7 +32,7 @@ const Section = ({className, data}) => {
       id={data.id} 
       ref={ref}
       animate={inView ? "visible" : "hidden"} 
-      variants={ {visible:{transition:{staggerChildren: 0.2}}} }
+      variants={ {visible:{transition:{staggerChildren: 0.1}}} }
     >
       { data.blocks.map((block) => {
         // Render block based on typename
