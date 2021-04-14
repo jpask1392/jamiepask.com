@@ -7,6 +7,6 @@ import Background from './background'
 import Hamburger from './hamburger'
 import Seo from './seo'
 import Cursor from './cursor'
-import LoadingScreen from './loadingScreen'
+import Tooltip from './tooltip'
 
-export { Head, Footer, Nav, Hero, Background, MainMenu, Hamburger, Seo, Cursor, LoadingScreen }
+export { Head, Footer, Nav, Hero, Background, MainMenu, Hamburger, Seo, Cursor, Tooltip }

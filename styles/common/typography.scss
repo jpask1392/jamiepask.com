@@ -60,14 +60,26 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
+  letter-spacing: 0.05em;
 
   @include breakpoint($lg) {
     font-size: 15px;
   }
 }
 
-p {
+p,
+.tooltip,
+ul {
   line-height: 2;
+  font-size: 16px;
+
+  @include breakpoint($md) {
+    font-size: 20px;
+  }
+
+  @include breakpoint($lg) {
+    font-size: 25px;
+  }
 
   &:last-of-type {
     margin-bottom: 0;

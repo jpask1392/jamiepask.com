@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { container, columnWidth, breakpoint } from 'styles/sc-mixins'
 import tinycolor from 'tinycolor2'
 import { motion } from 'framer-motion';
+import { Tooltip } from 'components/common/'
+import parse from 'html-react-parser'
 
 const variants = {
   visible: {
@@ -24,11 +26,18 @@ const LgHeader = ({className, data, bg}) => {
   return (
     <motion.h2 
       className={className} 
-    
       variants={variants}
       initial={variants.hidden}
     >
-      {data.content}
+      {
+        (Array.isArray(data.content)) 
+          ? data.content.map((block) => (
+            typeof block === 'object' 
+                ? <Tooltip data={block} />
+                : parse(block)
+            ))
+          : parse(data.content)
+      }
     </motion.h2>
   )
 }
