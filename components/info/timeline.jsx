@@ -83,9 +83,17 @@ export default styled(Timeline)`
     }
 
     ul {
-      font-size: 20px;
+      font-size: 16px;
       padding-left: 1.5rem;
       margin-top: 3rem;
+
+      @media ${breakpoint.md} {
+        font-size: 18px;
+      }
+
+      @media ${breakpoint.lg} {
+        font-size: 20px;
+      }
     }
 
     li {
