@@ -72,6 +72,7 @@ const Nav = ({className, setOpen}) => {
                   }, }}
                 >
                   {menuItem.name}
+                  <sup><SVG src="/svg/expand.svg" /></sup>
                 </motion.a>
               )
             }
@@ -122,6 +123,14 @@ export default styled(Nav)`
 
       @media ${breakpoint.lg} {
         font-size: 40px;
+      }
+
+      sup {
+        margin-left: 5px;
+
+        svg {
+          width: 13px;
+        }
       }
   
       &:hover {
