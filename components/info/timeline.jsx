@@ -2,6 +2,7 @@
 import styled from 'styled-components'
 import { container, columnWidth, breakpoint } from 'styles/sc-mixins'
 import tinycolor from 'tinycolor2'
+import parse from 'html-react-parser'
 
 // Component
 const Timeline = ({className, data, bg}) => {
@@ -13,7 +14,7 @@ const Timeline = ({className, data, bg}) => {
       </div>
       <div className="content">
         <h3>{data.company}</h3>
-        <p>{data.content}</p>
+        {parse(data.content)}
       </div>
     </div>
   )
@@ -78,6 +79,21 @@ export default styled(Timeline)`
 
     p {
       white-space: pre-line;
+      margin-top: 3rem;
+    }
+
+    ul {
+      font-size: 20px;
+      padding-left: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    li {
+      padding-left: 0.5rem;
+
+      &:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
     }
   }
 

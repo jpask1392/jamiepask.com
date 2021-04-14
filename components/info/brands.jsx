@@ -31,6 +31,7 @@ export default styled(Brands)`
   @media ${breakpoint.md} {
     grid-template-columns: repeat(4, 1fr);
     ${container(10, 1)}
+    margin-top: ${columnWidth(0.5)};
   }
 
   @media ${breakpoint.lg} {

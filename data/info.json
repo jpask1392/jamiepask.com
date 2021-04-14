@@ -6,12 +6,28 @@
       {
         "id": 1,
         "type": "lgHeader",
-        "content": "Born and raised in the United Kingdom, moved to the United States in 2019."
+        "content": [
+          {
+            "text": "Elo gov!",
+            "tooltip": "Nice to meet you",
+            "translation": true
+          },
+          " I’m Jamie Pask, Web Engineer from Wales (next to England)."
+        ]
       },
       {
         "id": 2,
         "type": "body",
-        "content": "During a short career as an Architectural Technologist, a need for automating repetitive software tasks created my fascination with programatic development which led to a career as a web developer."
+        "content": [
+          "Currently living in Los Angeles, working as a freelance web developer and on the look out for some new, exciting opportunities. Feel free to",
+          {
+            "text": " reach out ",
+            "tooltip": "contact@jamiepask.com",
+            "href": "mailto:contact@jamiepask.com",
+            "translation": false
+          },
+          "if you’re looking to create some awesome projects together."
+        ]
       },
       {
         "id": 3,
@@ -33,17 +49,22 @@
       {
         "id": 1,
         "type": "smHeader",
-        "content": "How I got here"
+        "content": "How I got here?"
       },
       {
         "id": 2,
         "type": "lgHeader",
-        "content": "Suffering with the travel bug, 2014 hit and I, with few friends set off to the East coast of America."
+        "content": "The typical <em>British guy meets American girl on a study abroad trip</em> story. Leading to a move across the world and a career change."
       },
       {
         "id": 3,
         "type": "body",
-        "content": "We travelled from New York to Miami on a short 2 week trip, sealing my fascination with the states. Shortly after returning home, I met a girl in a bar that happened to be from California. \n She was completing part of her university degree in Cardiff University and we hit it off instantly. We spent her entire time in Cardiff together before she eventually went back to LA at the end of 2015. We continued the long distance relationship for over 4 years, where we would travel back and forth often to be with each other until at the beginning of 2019 we tied the knot and I made the move out to Los Angeles."
+        "content": "At the time of meeting my future wife, I had graduated from Cardiff Metropolitan University with a Bachelor of Science degree in Architectural Design & Technology, and was working as a Technician in a well respected, local Architecture firm."
+      },
+      {
+        "id": 4,
+        "type": "body",
+        "content": "Task automation and software enchantments became commonplace and led to a self education in all things software. On a 3 month trip to Los Angeles in 2015, I developed my very first simple, web based portfolio and have been consistently researching web technologies ever since. I took the dive into a full career change in 2019, working as a freelance developer for various clients."
       }
     ]
   },
@@ -59,7 +80,14 @@
       {
         "id": 2,
         "type": "lgHeader",
-        "content": "Here's some of the awesome brands I've been lucky enough to work with."
+        "content": [
+          {
+            "text": "Chuffed ",
+            "tooltip": "Very pleased",
+            "translation": true
+          },
+          "to have worked on some exciting projects with these awesome brands."
+        ]
       },
       {
         "id": 3,
@@ -70,7 +98,7 @@
               "src": "/info/moonjuice_elev2c.jpg",
               "alt": "",
               "width": 100,
-              "height": 100
+              "height": 70
             }
           },
           {
@@ -78,7 +106,7 @@
               "src": "/info/carkella_h57nvi.jpg",
               "alt": "",
               "width": 100,
-              "height": 100
+              "height": 70
             }
           },
           {
@@ -86,7 +114,7 @@
               "src": "/info/mutesix_t4dilz.jpg",
               "alt": "",
               "width": 100,
-              "height": 100
+              "height": 70
             }
           },
           {
@@ -94,7 +122,7 @@
               "src": "/info/ilola_dcajoc.jpg",
               "alt": "",
               "width": 100,
-              "height": 100
+              "height": 70
             }
           },
           {
@@ -102,7 +130,7 @@
               "src": "/info/littlebridges_goghtu.jpg",
               "alt": "",
               "width": 100,
-              "height": 100
+              "height": 70
             }
           },
           {
@@ -110,7 +138,7 @@
               "src": "/info/nexwar_xeukdv.jpg",
               "alt": "",
               "width": 100,
-              "height": 100
+              "height": 70
             }
           },
           {
@@ -118,7 +146,7 @@
               "src": "/info/isw_glvmje.jpg",
               "alt": "",
               "width": 100,
-              "height": 100
+              "height": 70
             }
           },
           {
@@ -126,7 +154,7 @@
               "src": "/info/salute_igyull.jpg",
               "alt": "",
               "width": 100,
-              "height": 100
+              "height": 70
             }
           },
           {
@@ -134,7 +162,7 @@
               "src": "/info/loveleo_aybdho.jpg",
               "alt": "",
               "width": 100,
-              "height": 100
+              "height": 70
             }
           },
           {
@@ -142,7 +170,7 @@
               "src": "/info/techtonic_kir0es.jpg",
               "alt": "",
               "width": 100,
-              "height": 100
+              "height": 70
             }
           }
         ]
@@ -152,16 +180,16 @@
         "type": "timeline",
         "dateStart": "Dec 2019",
         "dateEnd": "Present",
-        "company": "Lead Developer | Techyscouts | Los Angeles, ca",
-        "content": "Produced technical solutions for a variety of issues, ranging from UI to hosting issues • Consumed a range of third party API’s. For instance, I’ve used Loyalty Lion’s API to generate custom CSV files, exporting and storing for local download within an S3 bucket • Coordinated development, deployment and maintenance techniques for collaborative work. In particular, creating local environments within Docker containers, incorporating CI/CD processes with GIT hooks and documenting preferred workflows for future projects.\n\n I've also built custom Wordpress themes, Shopify themes and apps using modern build tools, specifically, Webpack and Gulp, to incorporate current web technologies and improve maintainability • Replicated Figma/Photoshop/XD files to pixel accuracy • Adhered to coding standards through consistent research and incorporating linters into my workflow."
+        "company": "Techyscouts, Los Angeles, ca",
+        "content": "<p>Working as a freelance developer for Techyscouts, my day to day ranges from fixing legacy code bugs, to producing brand new sites using the latest technologies. Here’s some of the more interesting roles I’ve taken on at the company:</p><ul><li>Produced technical solutions for a variety of issues, ranging from UI to hosting issues</li><li>Consumed a range of third party API’s. For instance, using Loyalty Lion’s API to generate custom CSV files, exporting and storing for local download within an S3 bucket.</li><li>Coordinated development, deployment and maintenance techniques for collaborative work. In particular, creating local environments within Docker containers, incorporating CI/CD processes with GIT hooks and documenting preferred workflows for future projects.</li><li>Built custom Wordpress themes, Shopify themes and apps using modern build tools, specifically, Webpack and Gulp, to incorporate current web technologies and improve maintainability.</li><li>Replicated Figma/Photoshop/XD files to pixel accuracy.</li><li>Adhered to coding standards through consistent research and incorporating linters into my workflow.</li></ul>"
       },
       {
         "id": 5,
         "type": "timeline",
         "dateStart": "August 2020",
         "dateEnd": "Present",
-        "company": "Web Developer | Freelance",
-        "content": "Incorporated Shopify into a pre-existing NextJS application by consuming the Storefront API. The project involved pulling Shopify product data for displaying and filtering, creating a functional ajax cart with Redux state management and ensuring a robust checkout system • Used a git workflow to assist senior developers • Made various improvements and bug fixes for multiple clients in both Shopify and Wordpress sites • Built emailing templates through Mailchimp and other CRM’s."
+        "company": "Web Developer, Freelance",
+        "content": "<p>I have also been fortunate enough to be in contact with a few companies in Vancouver and contracted work for them including Nextjs and Shopify builds.</p><ul><li>Incorporated Shopify into a pre-existing NextJS application by consuming the Storefront API. The project involved pulling Shopify product data for displaying and filtering, creating a functional ajax cart with Redux state management and ensuring a robust checkout system.</li><li>Used a git workflow to assist senior developers.</li><li>Made various improvements and bug fixes for multiple clients in both Shopify and Wordpress sites.</li><li>Built emailing templates through Mailchimp and other CRM’s.</li></ul>"
       }
     ]
   }

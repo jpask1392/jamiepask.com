@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { container, columnWidth, breakpoint } from 'styles/sc-mixins'
 import tinycolor from 'tinycolor2'
 import { motion } from 'framer-motion';
+import { Tooltip } from 'components/common/'
 
 const variants = {
   visible: {
@@ -21,13 +22,25 @@ const variants = {
 
 // Component
 const Body = ({className, data, bg}) => {
+  const createMarkup = (content) => {
+    return {__html: content};
+  }
+
   return (
     <motion.p 
       className={className}
       variants={variants}
       initial={variants.hidden}
     >
-      {data.content}
+      {
+        (Array.isArray(data.content)) 
+          ? data.content.map((block) => (
+            typeof block === 'object' 
+                ? <Tooltip data={block} />
+                : block 
+            ))
+          : data.content
+      }
     </motion.p>
   )
 }
