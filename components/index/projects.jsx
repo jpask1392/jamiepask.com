@@ -23,7 +23,11 @@ const Projects = ({className}) => {
 
     // set delay to simulate db call
     setTimeout(function () {
-      let updatedProjects = projectsData.filter(project => project.category === filterTerm)
+      let updatedProjects = (filterTerm !== 'All')
+        ? projectsData.filter(project => project.category === filterTerm)
+        : projectsData
+      
+      // update state
       setProjects(updatedProjects)
     }, 400)
   }

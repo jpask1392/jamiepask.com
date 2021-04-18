@@ -6,7 +6,8 @@ import { useState, useEffect } from 'react'
 // Component
 const Filter = ({className, updateResults, projects}) => {
   const [filters, setActiveFilter] = useState([
-    {name: "Wordpress", active: true},
+    {name: "All", active: true},
+    {name: "Wordpress", active: false},
     {name: "Shopify", active: false},
     {name: "React", active: false},
   ])
@@ -20,7 +21,7 @@ const Filter = ({className, updateResults, projects}) => {
 
   useEffect(() => {
     // set default
-    updateResults('Wordpress')
+    updateResults('All')
   }, [])
 
 
@@ -33,7 +34,11 @@ const Filter = ({className, updateResults, projects}) => {
             <a onClick={() => handleClick(name)}>
               {name} 
               <sup className="count">
-                {projects.filter(project => project.category === name).length}
+                {
+                  name !== "All"
+                    ? projects.filter(project => project.category === name).length
+                    : projects.length
+                }
               </sup>
             </a>
         </li>  
