@@ -11,7 +11,7 @@ const myLoader = ({ src, width }) => {
 }
 
 const myLoaderBlur = ({ src, width }) => {
-  return `https://res.cloudinary.com/djetpo84s/image/upload/e_blur:200,w_100,f_auto/v1614310082/jamiepask.com/${src}`
+  return `https://res.cloudinary.com/djetpo84s/image/upload/t_media_lib_thumb,f_auto,r_10/v1614310082/jamiepask.com/${src}`
 }
 
 const Cimage = ({
@@ -23,37 +23,28 @@ const Cimage = ({
   sizes = "(min-width: 1000px) and (max-width: 1999px) 800px, (min-width: 2000px) 1500px, 100vw",
   priority = false
 }) => {
-  // const cloundinary_id = "djetpo84s"
-  const [ loading, setLoading ] = useState(true)
-
-  const handleLoad = (e) => {
-    setLoading(false)
-  }
-
   return (
-    <div className={className}>
-    { 
-      loading && 
-        <div style={{ width: "100%",position: "absolute" }}>
-          <Image
-            src={src}
-            alt="Loading"
-            width={width}
-            height={height}
-            loader={myLoaderBlur}
-            layout={layout}
-          />
-        </div> 
-    }
+    <div className={className} style={{ position: "relative" }}>
+      <div style={{ position: "absolute", left: "1%", top: "1%", opacity: 1, width: "99%", height: "99%" }}>
+        <Image
+          src={src}
+          alt=""
+          loader={myLoaderBlur}
+          width={width}
+          height={height}
+          sizes={sizes}
+          layout={layout}
+          loading="eager"
+        />
+      </div>
 
-    <Image
+      <Image
         src={src}
-        alt="Picture of the author"
+        alt=""
         loader={myLoader}
         width={width}
         height={height}
         sizes={sizes}
-        onLoad={handleLoad}
         layout={layout}
         priority={priority}
       />

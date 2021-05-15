@@ -21,7 +21,12 @@ const Project = ({project, nextProject}) => {
       <Nav data={project} />
       <main className="case-study bg-white">
         <Hero data={project} />
-        { project.sections.map((section) => <Section data={section} key={section.id} /> )}
+        { project.sections.map((section) => {
+          let uniqueId = project.slug + section.id;
+          return (
+            <Section data={{...section, ...project}} key={uniqueId} />
+          )
+        })}
       </main>
       <Footer data={project} next={nextProject} />
     </>

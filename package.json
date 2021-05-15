@@ -9,6 +9,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@plaiceholder/css": "^1.0.0",
     "@reduxjs/toolkit": "^1.5.1",
     "classnames": "^2.2.6",
     "framer-motion": "^3.6.2",

@@ -37,8 +37,9 @@ const Section = ({className, data}) => {
       { data.blocks.map((block) => {
         // Render block based on typename
         let key = block.type;
+        let uniqueId = data.slug + data.id + block.id;
         let DynamicTagName = components[key] ?? null;
-        if (DynamicTagName) return <DynamicTagName key={block.id} data={block} bg={data.background}/>
+        if (DynamicTagName) return <DynamicTagName key={uniqueId} data={block} bg={data.background}/>
       })}
     </ motion.section>
   )

@@ -8,16 +8,18 @@ const ImageColumms = ({className, data, bg}) => {
   return (
     <div className={className}>
       {
-        data.content.map((column, i) => (
+        data.content.map((column, i) => {
+          let uniqueId = column.image.src + i;
+          return (
           <Cimage
-            key={i}
+            key={uniqueId}
             src={column.image.src}
             alt={column.image.alt}
             width={column.image.width}
             height={column.image.height}
             layout="responsive"
           />    
-        ))
+        )})
       }
     </div>
   )
