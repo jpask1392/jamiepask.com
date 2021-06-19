@@ -55,9 +55,11 @@ export default styled(Filter)`
   display: flex;
   position: relative;
   z-index: 1;
+  line-height: 1;
 
   @media ${breakpoint.md} {
     ${container(10, 0)}
+    margin-bottom: 40px !important;
   }
 
   li {
@@ -70,6 +72,7 @@ export default styled(Filter)`
     @media ${breakpoint.md} {
       font-size: 20px;
       margin-right: 30px;
+      margin-bottom: 0;
     }
 
     @media ${breakpoint.lg} {

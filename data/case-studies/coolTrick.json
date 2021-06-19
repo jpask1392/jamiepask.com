@@ -1,0 +1,112 @@
+{
+  "name": "Cool Trick.",
+  "date": "2021",
+  "bg": "#050505",
+  "url": "https://cooltrick.co",
+  "slug": "cool-trick",
+  "overview": {
+    "header": {
+      "content": "Cool Trick is a NFT focused brand that spotlights artists within the surf, skate, and snow culture."
+    },
+    "body": {
+      "content": "Excited to get into the NFT (non fungible token) space, I worked closely with the CEO of Cool Trick and was given full creative liberty to build a site with fresh branding, a new design and bleeding edge tech."
+    },
+    "image": {
+      "src": "Cool Trick/cooltrickHero_fu6vql.jpg",
+      "alt": "",
+      "width": 778,
+      "height": 564
+    }
+  },
+  "sections": [
+    {
+      "id": "design",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "2.0",
+          "title": "Design"
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Dark neon theme. \nEmphasis on the artists."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "After being approached by Cool Trick to build their new website, we got to work discussing how we wanted the website to work. We mocked out basic wireframes and ultimately came to the conclusion that priorities were a prominent  purchase button to lead users to the product page and a clear list of available artists without too much scrolling."
+        },
+        {
+          "id": 4,
+          "type": "body",
+          "content": "Following the initial wireframe discussion, we leaned in the design approach. We wanted it to have that  modern/futuristic look so I leaned into the 80’s sci fi neon “Tron” style and ran with it. Using a pop of pink on a dark background gave us the effect we wanted to showcase the new brand."
+        },
+        {
+          "id": 5,
+          "type": "imageColumns",
+          "columnCount": 2,
+          "columnGap": 0.5,
+          "content": [
+            {
+              "image": {
+                "src": "/Cool Trick/tron_ofhmss.jpg",
+                "alt": "",
+                "width": 1000,
+                "height": 625
+              }
+            },
+            {
+              "image": {
+                "src": "/Cool Trick/neon_hbqpaq.jpg",
+                "alt": "",
+                "width": 1000,
+                "height": 625
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "3.0",
+          "title": "Development"
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Contentful.\nNextJS."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "Cool Trick was looking for a lightning fast website after having trouble with slower sites in the past. Having worked with Next.js, and achieving incredible results with it, I recommended the framework which boasted built in image optimization, page pre-rendering and page prefetching to name a few of its user facing benefits. Leading to near perfect scores via Lighthouse:"
+        },
+        {
+          "id": 4,
+          "type": "lgImage",
+          "widthInCols": 10,
+          "image": {
+            "src": "/Cool Trick/performance_liuugn.jpg",
+            "alt": "",
+            "width": 2030,
+            "height": 872
+          }
+        },
+        {
+          "id": 5,
+          "type": "body",
+          "content": "Having the ability to alter content with minimal dev intervention was another prerequisite of Cool Trick. For the headless CMS we went with Contentful. Mainly because I liked its beautiful UI and GraphQL api option. It’s content model is also more than powerful enough for what we needed. It allowed me to create models for page layouts, navigation and even contact forms (which are handled with SendGrid)."
+        }
+      ]
+    }
+  ]
+}

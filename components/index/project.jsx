@@ -132,6 +132,7 @@ export default styled(Project)`
 
     @media ${breakpoint.lg} {
       ${container(10, 0.5)}
+      margin-top: 0;
     }
   }
 

@@ -36,17 +36,18 @@ export default styled(Hero)`
   h1 {
     font-size: 80px;
     line-height: 1;
-    // opacity: 0;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    font-family: jeanne-moderno-geometrique, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: lowercase;
+    color: #212121;
 
     @media ${breakpoint.md} {
       font-size: 120px;
     }
 
     @media ${breakpoint.lg} {
-      font-size: 180px;
+      font-size: 160px;
     }
   }
 
@@ -56,15 +57,20 @@ export default styled(Hero)`
     width: 100%;
     height: 1px;
     background: rgba(0, 0, 0, 0.1);
-    margin-top: 1.5rem;
   }
 
   .subtext {
     font-size: 12px;
     font-weight: 700;
+    margin-bottom: 0.75rem;
 
     @media ${breakpoint.md} {
       font-size: 15px;
+      margin-bottom: 1.25rem;
+    }
+
+    @media ${breakpoint.lg} {
+      margin-bottom: 1.5rem;
     }
   }
 `

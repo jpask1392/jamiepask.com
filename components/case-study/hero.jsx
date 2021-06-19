@@ -105,17 +105,18 @@ export default styled(Hero)`
       width: 100%;
       height: 1px;
       background: ${({data}) => data.bg && tinycolor(data.bg).isDark() ? 'white' : 'black'};
-      margin-top: 1.5rem;
     }
   }
 
   h1 {
     font-size: 50px;
     line-height: 1;
-    text-transform: capitalize;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: ${({data}) => data.bg && tinycolor(data.bg).isDark() ? 'white' : 'black'};
+    text-transform: lowercase;
+    font-family: jeanne-moderno-geometrique, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: ${({data}) => data.bg && tinycolor(data.bg).isDark() ? '#EFEFEF' : 'black'};
+    /* letter-spacing: -0.08em; */
 
     @media ${breakpoint.md} {
       font-size: 80px;

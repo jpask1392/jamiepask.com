@@ -1,5 +1,17 @@
 [
   {
+    "name": "Cool Trick",
+    "category": "React",
+    "color": "#050505",
+    "date": "2021",
+    "slug": "cool-trick",
+    "hero": {
+      "width": 778,
+      "height": 564,
+      "src": "Cool Trick/cooltrickHero_fu6vql.jpg"
+    }
+  },
+  {
     "name": "Portfolio",
     "category": "React",
     "color": "#062979",
