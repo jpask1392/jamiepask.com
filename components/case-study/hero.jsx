@@ -89,7 +89,7 @@ export default styled(Hero)`
     align-items: flex-end;
     justify-content: space-between;
     margin: 50px 30px;
-    margin-top: 100px;
+    margin-top: 150px;
 
     @media ${breakpoint.md} {
       ${container(10, 2.5)}
