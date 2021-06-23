@@ -1,0 +1,83 @@
+{
+  "name": "Moonjuice",
+  "date": "2021",
+  "bg": "#D39165",
+  "url": "https://moonjuice.com/",
+  "slug": "moonjuice",
+  "overview": {
+    "header": {
+      "content": "Moonjuice work with plant-sourced alchemy including plant proteins, and mushrooms to elevate body, beauty and consciousness."
+    },
+    "body": {
+      "content": "My main responsibilities on the site involved handling ReCharge integration through its API and updating the AJAX cart by improving its performance and responsiveness."
+    },
+    "image": {
+      "src": "Moonjuice/moonjuiceHero_ddzyzw",
+      "alt": "",
+      "width": 778,
+      "height": 564
+    }
+  },
+  "sections": [
+    {
+      "id": "shopifyApps",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "2.0",
+          "title": "Shopify apps"
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Custom app.\nAPI integrations."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "My main responsibility with Moonjuice was to create and maintain a custom app to open the possibility of various new Shopify features. These included generating/storing custom exports via Loyalty Lion’s API and handling the addition/removal of discount codes on subscription products based on items in the subscription at time of recurring order via ReCharges API."
+        },
+        {
+          "id": 4,
+          "type": "body",
+          "content": "The app was created with Node, Nextjs and Shopify’s API. Hosting is on Heroku, connected to a git account for improved maintainability and easier collaboration. Loyalty Lion exports are stored within an Amazon S3 bucket."
+        }
+      ]
+    },
+    {
+      "id": "ajax",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "3.0",
+          "title": "Ajax"
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "UX improvements."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "Another of my responsibilities with Moonjuice was to improve the drawer cart, making it load smoother on updates. The client noticed items jumped around when updating the cart. Although some improvements were out of my control, Shopify app additions for example, I tweaked the handlebars template files and streamlined the javascript source files to make them more efficient. I also added loading bars for more user feedback on processes."
+        },
+        {
+          "id": 4,
+          "type": "lgImage",
+          "widthInCols": 10,
+          "image": {
+            "src": "/Moonjuice/moonjuice_2x_yffhzt",
+            "alt": "",
+            "width": 2030,
+            "height": 1146
+          }
+        }
+      ]
+    }
+  ]
+}

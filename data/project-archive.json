@@ -12,6 +12,18 @@
     }
   },
   {
+    "name": "Moonjuice",
+    "category": "Shopify",
+    "color": "#D39165",
+    "date": "2021",
+    "slug": "moonjuice",
+    "hero": {
+      "width": 778,
+      "height": 564,
+      "src": "Moonjuice/moonjuiceHero_ddzyzw"
+    }
+  },
+  {
     "name": "Portfolio",
     "category": "React",
     "color": "#062979",
