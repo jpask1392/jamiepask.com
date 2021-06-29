@@ -63,6 +63,10 @@ export default styled(Body)`
     padding-top: ${columnWidth(1)};
   }
 
+  + div[class^=gist] {
+    padding-top: ${columnWidth(0.5)};
+  }
+
   &:not(:last-of-type) {
     margin-bottom: 1rem;
   }

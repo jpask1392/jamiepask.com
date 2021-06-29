@@ -1,7 +1,7 @@
 // Dependencies
 import styled from 'styled-components'
 import { container, columnWidth, breakpoint } from 'styles/sc-mixins'
-import { LgHeader, SmHeader, Body, LgImage, SmHeaderReport, ImageColumns } from 'components/blocks'
+import { LgHeader, SmHeader, Body, LgImage, SmHeaderReport, ImageColumns, Gist } from 'components/blocks'
 import { Brands, Timeline } from 'components/info/index'
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -18,7 +18,8 @@ const Section = ({className, data}) => {
     "smHeaderReport": SmHeaderReport,
     "brands": Brands,
     "timeline": Timeline,
-    "imageColumns": ImageColumns
+    "imageColumns": ImageColumns,
+    "gist": Gist,
   }
 
   const { ref, inView } = useInView({

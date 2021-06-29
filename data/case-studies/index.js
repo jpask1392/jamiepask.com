@@ -7,5 +7,6 @@ import loveleo from 'data/case-studies/loveleo';
 import portfolio from 'data/case-studies/portfolio';
 import coolTrick from 'data/case-studies/coolTrick';
 import moonjuice from 'data/case-studies/moonjuice';
+import nineRealty from 'data/case-studies/nineRealty';
 
-export default [ mutesix, techtonic, houseConcepts, ilola, carkella, loveleo, portfolio, coolTrick, moonjuice ]
+export default [ mutesix, techtonic, houseConcepts, ilola, carkella, loveleo, portfolio, coolTrick, moonjuice, nineRealty ]

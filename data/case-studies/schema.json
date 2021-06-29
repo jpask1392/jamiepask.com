@@ -41,6 +41,11 @@
         },
         {
           "id": 4,
+          "type": "gist",
+          "gistID": "e8a336d1e0596a0fcd48d8c17e21a1cd"
+        },
+        {
+          "id": 4,
           "type": "lgImage",
           "widthInCols": 10,
           "image": {

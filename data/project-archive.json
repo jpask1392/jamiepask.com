@@ -1,5 +1,17 @@
 [
   {
+    "name": "Nine Realty",
+    "category": "React",
+    "color": "#06080A",
+    "date": "2021",
+    "slug": "nine-realty",
+    "hero": {
+      "width": 778,
+      "height": 564,
+      "src": "nineRealty/ninerealtyhero_i39mtd.jpg"
+    }
+  },
+  {
     "name": "Cool Trick",
     "category": "React",
     "color": "#050505",

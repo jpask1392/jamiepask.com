@@ -1,0 +1,147 @@
+{
+  "name": "Nine Realty",
+  "date": "2021",
+  "bg": "#06080A",
+  "url": "https://ninerealty.dev.jamiepask.com/",
+  "slug": "nine-realty",
+  "overview": {
+    "header": {
+      "content": "Nine Realty serve NYC’s Upper West Side community, specializing in welcoming real estate rentals."
+    },
+    "body": {
+      "content": "Following initial talks and concept design from hello-nat, I worked as lead developer on creating a new site to showcase available apartments and serve as a point of contact from interested clients."
+    },
+    "image": {
+      "src": "/nineRealty/ninerealtyhero_i39mtd.jpg",
+      "alt": "",
+      "width": 778,
+      "height": 564
+    }
+  },
+  "sections": [
+    {
+      "id": "process",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "2.0",
+          "title": "process"
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "Research, build, deploy."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "Working alongside project coordinator and designer, hello-nat, we discussed exploring new technologies for developing this project. After thorough research on a variety of CMS’s and front end technologies, we landed on Contentful, which provided a beautiful UI for content management and simple integration with NextJS."
+        },
+        {
+          "id": 4,
+          "type": "body",
+          "content": "After these team decisions were finalized, I moved onto further research into file structure, css planning and deployment strategies. "
+        },
+        {
+          "id": 5,
+          "type": "body",
+          "content": "Deployment with Vercel was chosen for its simplicity and cost effective solutions. Connecting the deployment to git saved time making changes and its ability to create Webhook connections to Contentful proved invaluable."
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "3.0",
+          "title": "development."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "NextJS.\nTailwind.\nStyled Components."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "I chose this project as an opportunity to test a utility-first approach to styling. I opted for TailwindCSS for its customizable class producing features and its build optimization process with NextJS. Using this alongside styled components, I was able to produce a powerful workflow creating very little custom CSS, saving tons of time and file size. Check out this example of a simple React component in the project demonstrating full encapsulation of markup and styles:"
+        },
+        {
+          "id": 4,
+          "type": "gist",
+          "gistID": "e8a336d1e0596a0fcd48d8c17e21a1cd"
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "background": false,
+      "blocks": [
+        {
+          "id": 1,
+          "type": "smHeaderReport",
+          "number": "4.0",
+          "title": "Animations."
+        },
+        {
+          "id": 2,
+          "type": "lgHeader",
+          "content": "GSAP.\nScroll Trigger.\nLocomotive Scroll."
+        },
+        {
+          "id": 3,
+          "type": "body",
+          "content": "After completing the layout and functionality of the site, I boosted its personality by adding a variety of animations with GSAP and smooth scrolling features with Locomotive Scroll. Animations like page transitions, horizontal scrolling locked to scrollbar and pinned items all aided in bringing emotion to the site."
+        },
+        {
+          "id": 4,
+          "type": "lgImage",
+          "widthInCols": 8,
+          "image": {
+            "src": "/nineRealty/ninerealty1_xw4fov.jpg",
+            "alt": "",
+            "width": 778,
+            "height": 564
+          }
+        },
+        {
+          "id": 5,
+          "type": "imageColumns",
+          "columnCount": 3,
+          "columnGap": 1.5,
+          "content": [
+            {
+              "image": {
+                "src": "/nineRealty/ninerealty2_e5n5uf.png",
+                "alt": "",
+                "width": 1252,
+                "height": 2532
+              }
+            },
+            {
+              "image": {
+                "src": "/nineRealty/ninerealty3_herrus.png",
+                "alt": "",
+                "width": 1252,
+                "height": 2532
+              }
+            },
+            {
+              "image": {
+                "src": "/nineRealty/ninerealty4_uch1uq.png",
+                "alt": "",
+                "width": 1252,
+                "height": 2532
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
