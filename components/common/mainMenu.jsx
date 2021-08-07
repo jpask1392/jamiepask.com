@@ -28,7 +28,7 @@ const Nav = ({className, setOpen}) => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.2 }}
     >
-      <Background />
+      {/* <Background /> */}
       <motion.ul 
         variants={ {visible:{transition:{staggerChildren: 0.2}}} }
         animate="visible"

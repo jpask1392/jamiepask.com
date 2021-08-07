@@ -64,9 +64,10 @@ export default styled(Filter)`
 
   li {
     margin-right: 15px;
-    opacity: 0.45;
+    opacity: 0.35;
     font-size: 15px;
     margin-bottom: 0.5rem;
+    font-weight: 700;
     transition: opacity 0.3s;
 
     @media ${breakpoint.md} {
@@ -76,7 +77,7 @@ export default styled(Filter)`
     }
 
     @media ${breakpoint.lg} {
-      font-size: 25px;
+      font-size: 21px;
       margin-right: 30px;
     }
 
@@ -92,15 +93,15 @@ export default styled(Filter)`
 
   .count {
     font-size: 11px;
-    font-weight: 500;
-    margin-left: 2px;
+    font-weight: 400;
+    margin-left: 5px;
 
     @media ${breakpoint.md} {
-      font-size: 14px;
+      font-size: 10px;
     }
 
     @media ${breakpoint.lg} {
-      font-size: 14px;
+      font-size: 10px;
     }
   }
 `

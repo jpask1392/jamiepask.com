@@ -36,8 +36,8 @@ export default styled(Background)`
   right: 0;
   top: 0;
   bottom: 0;
-  background: white;
-  mix-blend-mode: multiply;
+  /* background: white; */
+  /* mix-blend-mode: multiply; */
 
   .lhs,
   .rhs {
