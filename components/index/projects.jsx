@@ -1,9 +1,10 @@
 // Dependencies
 import styled from 'styled-components'
-import { useState } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { Project, Filter, Loading } from 'components/index'
 import { columnWidth, container } from 'styles/sc-mixins'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
+import { SmoothScrollContext } from 'components/common/smoothScrollContext'
 
 // https://medium.com/javascript-in-plain-english/animate-when-element-is-in-view-with-framer-motion-63b254403bf
 // use framermotion and react-intersection-observer
@@ -16,6 +17,7 @@ const Projects = ({className}) => {
   // can move these into redux when set up
   const [projects, setProjects] = useState([])
   const [indexInView, setIndexInView] = useState(0)
+  const { scroll } = useContext(SmoothScrollContext)
 
   const updateProjects = filterTerm => {
     // set loading screen
@@ -29,8 +31,15 @@ const Projects = ({className}) => {
       
       // update state
       setProjects(updatedProjects)
+
+      // update scroll container
+      scroll && scroll.update()
     }, 400)
   }
+
+  useEffect(() => {
+    scroll && scroll.update()
+  }, [scroll, projects])
 
   return (
     <section className={className} id="projects">
