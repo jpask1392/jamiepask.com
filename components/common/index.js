@@ -8,5 +8,6 @@ import Hamburger from './hamburger'
 import Seo from './seo'
 import Cursor from './cursor'
 import Tooltip from './tooltip'
+import SiteNotice from './SiteNotice'
 
-export { Head, Footer, Nav, Hero, Background, MainMenu, Hamburger, Seo, Cursor, Tooltip }
+export { Head, Footer, Nav, Hero, Background, MainMenu, Hamburger, Seo, Cursor, Tooltip, SiteNotice }

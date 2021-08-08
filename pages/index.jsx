@@ -1,5 +1,5 @@
 // Components
-import { Nav, Hero, Footer, Seo, LoadingScreen } from 'components/common'
+import { Nav, Hero, Footer, Seo, SiteNotice } from 'components/common'
 import { Projects } from 'components/index'
 
 // Component
@@ -10,6 +10,7 @@ const Index = () => (
     {/* <LoadingScreen /> */}
     <main className="home">
       <Hero header="Work." subheader="v2.0" />
+      <SiteNotice />
       <Projects />
     </main>
     <Footer />
