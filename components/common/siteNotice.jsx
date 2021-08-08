@@ -12,7 +12,8 @@ const SiteNotice = ({ className }) => {
   return (
     <div className={className}>
       <div className={`toggle ${isActive ? 'active' : ''}`} onClick={() => setIsActive(!isActive)}>
-        <span/><span/>
+        <span/>
+        <span/>
       </div>
       {
         isActive && (
