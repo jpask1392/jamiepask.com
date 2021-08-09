@@ -1,17 +1,5 @@
 [
   {
-    "name": "Nine Realty",
-    "category": "React",
-    "color": "#06080A",
-    "date": "2021",
-    "slug": "nine-realty",
-    "hero": {
-      "width": 778,
-      "height": 564,
-      "src": "nineRealty/ninerealtyhero_i39mtd.jpg"
-    }
-  },
-  {
     "name": "Cool Trick",
     "category": "React",
     "color": "#050505",
@@ -24,15 +12,27 @@
     }
   },
   {
-    "name": "Moonjuice",
-    "category": "Shopify",
-    "color": "#D39165",
+    "name": "Techtonic",
+    "category": "Wordpress",
+    "color": "#002476",
     "date": "2021",
-    "slug": "moonjuice",
+    "slug": "techtonic",
     "hero": {
       "width": 778,
       "height": 564,
-      "src": "Moonjuice/moonjuiceHero_ddzyzw"
+      "src": "techtonic/hero_2x_ugy88a.jpg"
+    }
+  },
+  {
+    "name": "Nine Realty",
+    "category": "React",
+    "color": "#06080A",
+    "date": "2021",
+    "slug": "nine-realty",
+    "hero": {
+      "width": 778,
+      "height": 564,
+      "src": "nineRealty/ninerealtyhero_i39mtd.jpg"
     }
   },
   {
@@ -48,15 +48,15 @@
     }
   },
   {
-    "name": "Techtonic",
-    "category": "Wordpress",
-    "color": "#002476",
+    "name": "Moonjuice",
+    "category": "Shopify",
+    "color": "#D39165",
     "date": "2021",
-    "slug": "techtonic",
+    "slug": "moonjuice",
     "hero": {
       "width": 778,
       "height": 564,
-      "src": "techtonic/hero_2x_ugy88a.jpg"
+      "src": "Moonjuice/moonjuiceHero_ddzyzw"
     }
   },
   {
