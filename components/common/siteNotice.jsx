@@ -28,8 +28,8 @@ const SiteNotice = ({ className }) => {
 
 // Export
 export default styled(SiteNotice)`
-  height: 44px;
-  width: 44px;
+  height: 55px;
+  width: 55px;
   position: fixed;
   bottom: 0;
   text-transform: uppercase;
@@ -61,7 +61,7 @@ export default styled(SiteNotice)`
 
   p {
     margin: 0;
-    font-size: 13px;
+    font-size: 0.9rem;
     line-height: 1;
     white-space: nowrap;
     letter-spacing: 0.03em;
@@ -83,8 +83,8 @@ export default styled(SiteNotice)`
     display: flex;
     align-content: center;
     flex-wrap: wrap;
-    width: 12px;
-    height: 12px;
+    width: 1rem;
+    height: 1rem;
     z-index: 2;
     cursor: pointer;
     transform: rotate(-45deg);

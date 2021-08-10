@@ -29,7 +29,7 @@ const Projects = ({className}) => {
       
       // update state
       setProjects(updatedProjects)
-    }, 400)
+    }, 0)
   }
 
   return (
@@ -38,7 +38,7 @@ const Projects = ({className}) => {
       { 
         projects === 'loading' 
           ? <Loading />
-          : <motion.div className="projects" animate={{ y: [50, 0], opacity: [0, 1], transition: {duration: 0.3} }}>
+          : <motion.div className="projects">
               {
                 projects.map((project, i) => (
                   <Project 
