@@ -67,7 +67,7 @@ export default styled(Filter)`
     opacity: 0.35;
     font-size: 15px;
     margin-bottom: 0.5rem;
-    font-weight: 700;
+    font-weight: 500;
     transition: opacity 0.3s;
 
     @media ${breakpoint.md} {
