@@ -9,15 +9,13 @@ import parse from 'html-react-parser'
 const variants = {
   visible: {
     opacity: 1,
-    y: 0,
     transition: {
       ease: "easeOut",
-      duration: 0.6
+      duration: 1
     }
   },
   hidden: {
     opacity: 0,
-    y: 50
   },
 }
 
