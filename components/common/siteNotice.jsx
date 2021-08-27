@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 // Component
 const SiteNotice = ({ className }) => {
-  const [isActive, setIsActive] = useState(true)
+  const [isActive, setIsActive] = useState(false)
 
   return (
     <div className={className}>

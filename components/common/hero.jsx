@@ -7,10 +7,32 @@ import { motion } from 'framer-motion'
 const Hero = ({className, header, subheader}) => (
   <header className={className}>
     <motion.h1
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1, ease: 'easeOut', delay: 0.3 }}
+      initial="hidden" 
+      animate="show"
+      variants={
+        {
+          show: {
+            transition: {
+              staggerChildren: 0.1,
+            }
+          }
+        }
+      }
     >
-      {header}
+      {
+        [...header].map((letter) => (
+          <motion.span 
+            variants={
+              {
+                hidden: { opacity: 0, y: "100%" },
+                show: { opacity: 1, y: "0px", transition: { duration: 0.4, ease: 'circOut'} }
+              }
+            }
+          >
+            {letter}
+          </motion.span>
+        ))
+      }
     </motion.h1>
     <h2 className="subtext">{subheader}</h2>
   </header>
@@ -24,6 +46,7 @@ export default styled(Hero)`
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
+  overflow: hidden;
 
   @media ${breakpoint.md} {
     ${container(10, 2.5)}
@@ -41,6 +64,10 @@ export default styled(Hero)`
     font-style: normal;
     text-transform: lowercase;
     color: #212121;
+
+    span {
+      display: inline-block;
+    }
 
     @media ${breakpoint.md} {
       font-size: 120px;
